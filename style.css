@@ -79,6 +79,7 @@
     }
 
 }
+
 /*headers*/
 .header1{
     font-size: 2vw;
@@ -91,6 +92,14 @@
     font-family: be;
     text-align: center;
     padding: 40px;
+
+}
+.header2b{
+    font-size: 4vw;
+    font-family: be;
+    text-align: center;
+    color: #03010c;
+    margin-top: 5vh;
 
 }
 .header3{
@@ -147,7 +156,13 @@
         font-size: 1.6rem;
     }
 }
-
+/*orientation*/
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
 /*texts*/
 .servdesctxt{
     font-size: 1.1vw;
@@ -384,7 +399,7 @@ nav {
        
     }
     nav {   
-       
+       top: -150px;
     }
     .sticky {
         padding-left: 70px;
@@ -576,7 +591,7 @@ nav {
 
 .scopeiccont{
     margin: 20px;
-    width: 150px;
+    width: 200px;
     text-align: center;
     background-color: #0a051ae3;
     border-radius: 15px;
@@ -672,7 +687,7 @@ nav {
 
 .motoCont{
     margin-left: 10vh;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 .about{
     width: 100%;
@@ -698,13 +713,14 @@ nav {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0px;
 }
 .aboutimg{
     width: 100%;
     right: 0;
+}
+.whatwedocont{
+    width: 50%;
 }
 .whatwedo:hover{
     -webkit-animation: pulse 1s;
@@ -721,6 +737,12 @@ nav {
     bottom: 0px;
     padding: 20px;
     text-align: left;
+}
+.metatxtcont{
+    position: relative;
+    width: 40%;
+    color: #03010c;
+    top: 50px;
 }
 @media only screen and (max-width: 1200px) {
     .about-wrapper{
@@ -748,8 +770,8 @@ nav {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        background-color: #09091b;
         padding: 0px;
+        background-color: white;
     }
     .motoCont{
         margin: 30px;
@@ -776,10 +798,54 @@ nav {
   }
 
 /*SECTION3*/
+.approach{
+    position: relative;
+    top: -75px;
+    color: #e4ddfc;
+    background-image: url(img/gradientv4hard.jp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-color: #150f31;
+    
+}
+.appcont{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.appcard{
+    color: #03010c;
+    width: 200px;
+    padding-bottom: 20px;
+    outline: solid 2px #ffffff;
+    border-radius: 15px;
+    margin: 30px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    border-radius: 15px;
+    
+}
+.appcard p{
+    font-size: 1.2rem;
+    font-family: spartansemi;
+}
+.appimg{
+    max-width: 110px;
+}
+/*SECTION4*/
 .servicesec{
     position: relative;
     padding-top: 70px;
-    top: -70px;
+    top: -73px;
     background-color: #04010e;
     background-size: cover;
     background-position: center;
@@ -1159,8 +1225,9 @@ nav {
 .projects{
     width: 100%;
     position: relative;
-    bottom: 70px;
-    text-align: center;   
+    bottom: 74px;
+    text-align: center;  
+    background-color: #03010c; 
 }
 @media only screen and (max-width: 700px) {
     .projects{
