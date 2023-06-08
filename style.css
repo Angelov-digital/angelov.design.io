@@ -860,51 +860,64 @@ nav {
 .approach{
     position: relative;
     top: -76px;
-    color: #e4ddfc;
+    color: #03010c;
     background-image: url(img/gradientv4hard.jp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
     background-color: #150f31;
+    padding-bottom: 20px;
     
 }
 .apphead{
     position: relative;
     padding: 0;
     bottom: 20px;
+    color: #e4ddfc;
+    padding-bottom: 15px;
 }
 .appcont{
     display: flex;
     flex-direction: row;
-    width: 90%;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
-
+}
+.appcont2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.appdesc{
+    font-family: spartansemi;
+    font-size: 1.5rem ;
+}
+.appdesc2{
+    font-family: spartanlight;
 }
 .appcard{
-    width: 200px;
-    padding-bottom: 20px;
-    outline: solid 2px #03010c;
+    width: 400px;
+    height: 220px;
+    padding: 0px 30px 13px 30px;
+    outline: solid 1px #e4ddfc;
     border-radius: 15px;
-    margin: 30px;
+    margin: 20px;
     margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: left;
     border-radius: 15px;
-    background-color: white;
-    
-}
-.appcard p{
-    font-size: 1.2rem;
-    font-family: spartansemi;
-    color: #03010c;
+    background-color:#e4ddfc ; 
 }
 .appimg{
-    max-width: 110px;
+    width: 120px;
+}
+@media only screen and (max-width: 700px){
+    .apphead{
+        padding-top: 30px;
+    }
 }
 /*SECTION4*/
 .servicesec{
