@@ -232,7 +232,7 @@ li{
     margin-top: 10px;
 }
 body {
-    
+    background-color: #e4ddfc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -894,7 +894,7 @@ nav {
 }
 .appdesc{
     font-family: spartansemi;
-    font-size: 1.5rem ;
+    font-size: 1.2rem ;
 }
 .appdesc2{
     font-family: spartanlight;
@@ -912,7 +912,7 @@ nav {
     background-color:#e4ddfc ; 
 }
 .appimg{
-    width: 120px;
+    width: 110px;
 }
 @media only screen and (max-width: 700px){
     .apphead{
@@ -922,8 +922,8 @@ nav {
 /*SECTION4*/
 .servicesec{
     position: relative;
-    padding-top: 70px;
-    top: -73px;
+    padding-top: 0px;
+    top: -78px;
     background-color: #04010e;
     background-size: cover;
     background-position: center;
@@ -1196,12 +1196,13 @@ nav {
 
 /*Contact*/
 .contact{
-    background-color: #0A051A;
+    background-color: #e4ddfc;
     position: relative;
-    top: -80px;
+    top: -100px;
     text-align: center;
     font-size: 15px;
     padding-bottom: 50px;
+    color: #03010c;
 }
 
 .contact p {
