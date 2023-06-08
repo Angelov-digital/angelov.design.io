@@ -37,7 +37,19 @@
     
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7SYLQNMCB"></script>
- 
+
+    <script>
+        function scrollToLocation(scrollPosition) {
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+            });
+        }
+        function scrollToDiv(divId) {
+            const div = document.querySelector(divId);
+            div.scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
 
 </head>
 
@@ -45,15 +57,16 @@
 
     <section class="main-container">
         <div class="namewrapper">
-            <p class="name animate__animated animate__fadeInDown">Angelo Design</p>
-            <p class="designer animate__animated animate__fadeInRight">Visual & Website Studio</p>
-            <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-2s" src="img/icon/arrowDown.svg">
+            <p class="A">A</p>
+            <p class="name animate__animated animate__fadeInDown animate__delay-1s">Angelo Design</p>
+            <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Visual & Website Studio</p>
+            <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-5s" src="img/icon/arrowDown.svg" onclick="scrollToDiv('#scrollanchor')">
         </div>
         
     </section>
 
-    
-
+    <div id="scrollanchor"></div>
+<!-- NAVIGATION --> 
     <div id="navWrap">
         
         <nav>
@@ -62,14 +75,14 @@
                 <img class="logo" src="img/LogoV3dark.svg">
             </a>    
 
-            <div id="work">
+            <div id="">
                 <a href="#services">
                     <p class="nav-link">Services</p>
                 </a>
             </div>
 
-            <div id="about">
-                <a href="#scope">
+            <div id="">
+                <a href="#aboutus">
                     <p class="nav-link">About</p>
                 </a>
             </div>
@@ -80,7 +93,7 @@
                 </a>
             </div>
 
-            <div id="contact">
+            <div id="">
                 <a href="#contactscroll">
                     <p class="nav-link">Contact</p>
                 </a>
@@ -91,7 +104,7 @@
         
     </div>    
     
-
+<!-- NAVIGATION SIDE--> 
     <div class="sidebar" id="sidebar">
         <aside class="aside">
             <div class="vl">
@@ -107,8 +120,8 @@
             </div>         
         </aside>
     </div>
-
-    <section class="about" id="aboutus">
+<!-- SUBLANDING PAGE --> 
+    <section class="sublandpage" id="aboutus">
 
         <div class="aboutimgcont">
             <img class="aboutimg" src="img/svg/landingpageV5.svg">
@@ -126,44 +139,31 @@
                     </div>
                     </p>
                     <br>
-                    <br>
+            
                     <p class="header1" id="buton1">"Raise your public look to the higher dimension."</p>    
                     <br>
                     <br> 
-                    <br>   
-                    <a href="hireus.html" class="gradient-hover-effect">Hire Us</a>
+               
+                    <a href="hireus.html" class="gradient-hover-effect">Hire our team</a>
                     <br>
                     <div class="metatxtcont">
-                        <p class=""> By connecting highest graphic art standarts with a marketing knowledge, our services brings aesthetical and functional solutions to our clients which makes them stand out from the crowded market and leaves a memorable impression.</p>
+                        <p class=""> By connecting highest graphic art standarts and most contemporary modern style with a marketing knowledge, our services brings aesthetical and functional solutions to our clients. They makes you, or your company stand out from the crowded market leaving a memorable impression.</p>
                     </div>
-                </div>       
+
+                  
+                </div>    
+                <!--<div class="learnmorecont">
+                    <a href="hireus.html" class="gradient-hover-effect">Learn more</a>  
+                </div> !-->
+                
             </div> 
-            <p class="scrollmore">Scroll for more info</p>
+           
+            <!--<p class="scrollmore">Scroll for more info</p>!-->
            
     </section>
-    <section class="approach">
-
-        <p class="header2">Our approach</p>
         
-        
-        <div class="appcont">
-                
-            <div class="appcard">
-                <img src="img/icon/approachwhite-01.svg" class="appimg">
-                <p class="appdesc">Modernity</p>
-            </div>
-
-            <div class="appcard">
-                <img src="img/icon/approachwhite-02.svg" class="appimg">
-                <p class="appdesc">Artism</p>
-            </div>
-        </div>
-
-       
-
-    </section>     
-
-    <section class="aboutmobile" id="aboutus">  
+<!-- SUBLANDING PAGE MOBILE --> 
+    <section class="sublandpage-mobile" id="aboutus">  
 
             <div class="aboutwrap">  
 
@@ -182,7 +182,7 @@
 
             <div class="aboutimgcont">
                 <p class="scrollmore"></p>
-                <img class="aboutimg" src="img/landingpageV3.svg">
+                <img class="aboutimg" src="img/svg/final_mobile.svg">
                 
                 <div class="hiremobilewrap">
                     <a href="hireus.html" class="gradient-hover-effect">Hire Us</a>
@@ -191,7 +191,7 @@
     </section>
 
     
-
+<!-- PROJECTS GALLERY --> 
 
     <section class="projects" id="work-projects">
         <div class="projecthead-wrapper">
@@ -235,10 +235,9 @@
                 </div>
                 <div id="project2-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head"></p>
+                    <p class="modal-head">Business cards</p>
                     <div class="modal-frame">
-                        <img src="img/" class="modal-content">
-                        <img src="img/" class="modal-content">
+                        <img src="img/samanta.jpg" class="modal-content">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close2">&times;</span>
@@ -250,12 +249,12 @@
                 <div class="project" id="project3">
                     <img src="img/angeloidentity.jpg" class="">
                     <div class="project-txt-overlay">
-                        <p>Our Visual Identity</p>
+                        <p>Our new visual identity</p>
                     </div>
                 </div>
                 <div id="project3-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head"></p>
+                    <p class="modal-head">Angelo visual identity</p>
                     <div class="modal-frame">
                         <img src="img/" class="modal-content">
                         <img src="img/" class="modal-content">
@@ -274,9 +273,9 @@
                 </div>
                 <div id="project4-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head"></p>
+                    <p class="modal-head">Green lead logo</p>
                     <div class="modal-frame">
-                        <img src="img/" class="modal-content">
+                        <img src="img/greenlead1.jpg" class="modal-content">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close4">&times;</span>
@@ -304,27 +303,71 @@
                 </div>
 <!-- --------------------------------------------------------------------------------------- --> 
                 <div class="project" id="project6">
-                    <img src="img/posters-graded-hard.jpg" class="vertical">
-                    <div class="project-txt-overlay-vertical">
-                        <p></p>
+                    <img src="img/dizajn1.jpg" class="vertical">
+                    <div class="project-txt-overlay">
+                        <p>Posters</p>
                     </div>
                 </div>
                 <div id="project6-modal" class="modal">
                     <!-- modal frame -->
-                    <p class="modal-head">Idea visualization</p>
+                    <p class="modal-head">Typographical posters</p>
                     <div class="modal-frame">
-                        <img src="img/design/Vic Vic wipes.jpg" class="modal-content-vertical">
+                        <img src="img/dizajn1.jpg" class="modal-content-vertical">
                     </div>
                     <!-- The Close Button -->
                     <span class="close" id="close6">&times;</span>
                     
-                    <p class="modal-description">Concept design and visualization of reusable wet wipes package. Made for Vic Vic company</p>
+                    <p class="modal-description"></p>
                 </div>
 <!-- --------------------------------------------------------------------------------------- --> 
                 
             </div>
         </div>
+        
     </section>
+    <img class="bluebot-asset-projects asset1" src="img/svg/Asset_bluebot.svg">
+
+<!-- ABOUT US -->
+
+    <section class="aboutus" id="">
+
+        <img class="gradient-asset asset1" src="img/svg/Asset_gradient.svg">
+        
+        
+        <p class="header2 abouthead">About Us</p>
+
+        <div class="abouttxtcont">
+            <p class="">Angelo Design Studio is a leading creative firm that specializes in website design, graphics, and 3D modeling. With an artistic and modern approach, we bring a unique perspective to each project, delivering high-quality and visually stunning designs that captivate audiences. Utilizing the latest industry tools and techniques, Angelo Studio creates innovative solutions tailored to the needs of each client.
+                <br>
+                <br> Our expert team combines creativity, technical knowledge, and attention to detail to produce exceptional designs that leave a lasting impression. These captivating designs inspire confidence in our clients and helps their businesses stand out in a crowded online marketplace. With Angelo Studio's unique innovative approach, businesses can expect to achieve their goals and take their brand to the next level.</p>
+        </div>
+
+    </section>
+    <img class="gradient-asset-mobile asset1" src="img/svg/Asset_gradient2.svg">
+    <img class="bluebot-asset asset1" src="img/svg/Asset_bluebot.svg">
+    
+
+    <section class="approach">
+
+        <p class="header2 apphead">Key approach</p>
+        
+        
+        <div class="appcont">
+                
+            <div class="appcard">
+                <img src="img/icon/approach-03.svg" class="appimg">
+                <p class="appdesc">Modernity</p>
+            </div>
+
+            <div class="appcard">
+                <img src="img/icon/approach-04.svg" class="appimg">
+                <p class="appdesc">Artism</p>
+            </div>
+        </div>
+
+       
+
+    </section> 
 
     <section class="ourscope" id="scope">
         <div class="blueback">

@@ -270,7 +270,7 @@ body {
     left: 0;
     height: 70px;
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
     width: 70px;
     position: absolute;
     left: 0;
@@ -295,7 +295,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .cta2 {
     position: fixed;
@@ -303,7 +303,7 @@ body {
     left: 0;
     height: 60px;
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
     width: 60px;
     position: absolute;
     left: 0;
@@ -351,9 +351,9 @@ nav {
     position: fixed;
     top:0;
     z-index: 99;
-    background-color: #0b0123e7;
-    transition: background-color 0.9s;
-    transition: 1s;
+    background-color: #04010e;
+    transition: background-color 0.5s;
+    transition: 0.4s;
     
 }
 .stickyaside{
@@ -361,6 +361,7 @@ nav {
     top:0px;
     right:0px;
     z-index: 9;
+    transform: all 0.5s;
 }
 
 .nav-link {
@@ -404,6 +405,11 @@ nav {
     .sticky {
         padding-left: 70px;
         
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .nav-link{
+        font-size: 1.5rem;
     }
 }
 #work-underline{
@@ -470,16 +476,18 @@ nav {
     right: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
     z-index: 99;
+    
   }
 .vl {
     position: relative;
     height: 100%;
     border-left: 0px solid rgb(255, 255, 255);
-    width: 100px;   
+    width: 80px;   
     align-items: center;
     justify-content: center;
     padding-top: 30vh;
     top: 70px;
+    
 }
 .sidebar a {
     display: block;
@@ -531,11 +539,14 @@ nav {
 }
 .scrollpls{
     position: relative;
+    top: -20vh;
     margin-left: auto;
     margin-right: auto;
     width: 60px;
     opacity: 50%;
     top: 22vh;
+    cursor: pointer;
+    
 }
 .namewrapper{
     margin: 0;
@@ -546,6 +557,13 @@ nav {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff; 
+    bottom: -250px;
+}
+.A{
+    font-size: 32.5vh;
+    font-family: aquire;
+    position: relative;
+    bottom: 0px;
 }
 .name{
     font-size:4.3vw;
@@ -557,7 +575,14 @@ nav {
     font-family: spartanlight;
     text-align: right;
 }
+#scrollanchor{
+    position: absolute;
+    bottom: 70px;
+}
 @media only screen and (max-width: 700px) {
+    .A{
+        font-size: 15rem;
+    }
     .name {
       font-size: 50px;
       margin: 10px;
@@ -567,11 +592,31 @@ nav {
         text-align: center;
         margin-top: 30px;
     }
+    .scrollpls{
+        position: relative;
+        top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60px;
+        opacity: 50%;
+        cursor: pointer;
+        
+    }
+}
+@media only screen and (min-width: 1600px){
+    .name {
+        font-size: 5rem;
+        margin: 10px;
+      }
+      .designer{
+          font-size: 2rem;
+          margin-top: 25px;
+      }
 }
 /*Ourscope section*/
 .ourscope{ 
     position: relative;
-    top: -75px; 
+    top: -77px; 
     width: 100%;
     background-image: url(img/gradientv4hard.jpg);
     background-position: center;
@@ -687,15 +732,15 @@ nav {
 
 .motoCont{
     margin-left: 10vh;
-    margin-top: 10vh;
+    margin-top: 3vw;
 }
-.about{
+.sublandpage{
     width: 100%;
     position: relative;
     bottom: 70px;
     text-align: left;
 }
-.aboutmobile{
+.sublandpage-mobile{
     display: none;
 }
 
@@ -744,6 +789,20 @@ nav {
     color: #03010c;
     top: 50px;
 }
+.learnmorecont{
+    width: 100%;
+    position: relative;
+    top: 30vh;
+    text-align: center;
+}
+@media only screen and (max-width: 1400px){
+    .metatxtcont{
+        display: none;
+        background-color: #e4ddfce3;
+        padding: 15px;
+        border-radius: 10px;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .about-wrapper{
         height: 70vh;
@@ -753,10 +812,10 @@ nav {
     }
   }
 @media only screen and (max-width: 700px) {
-    .about{
+    .sublandpage{
        display: none;
     }
-    .aboutmobile{
+    .sublandpage-mobile{
         display: block;
         width: 100%;
         position: relative;
@@ -800,7 +859,7 @@ nav {
 /*SECTION3*/
 .approach{
     position: relative;
-    top: -75px;
+    top: -76px;
     color: #e4ddfc;
     background-image: url(img/gradientv4hard.jp);
     background-position: center;
@@ -809,6 +868,11 @@ nav {
     margin: auto;
     background-color: #150f31;
     
+}
+.apphead{
+    position: relative;
+    padding: 0;
+    bottom: 20px;
 }
 .appcont{
     display: flex;
@@ -820,10 +884,9 @@ nav {
 
 }
 .appcard{
-    color: #03010c;
     width: 200px;
     padding-bottom: 20px;
-    outline: solid 2px #ffffff;
+    outline: solid 2px #03010c;
     border-radius: 15px;
     margin: 30px;
     margin-top: 0;
@@ -832,11 +895,13 @@ nav {
     align-items: center;
     justify-content: left;
     border-radius: 15px;
+    background-color: white;
     
 }
 .appcard p{
     font-size: 1.2rem;
     font-family: spartansemi;
+    color: #03010c;
 }
 .appimg{
     max-width: 110px;
@@ -1195,49 +1260,25 @@ nav {
     width: 100%;
     justify-content: center;
 }
-.g-button{
-    width: 200px;
-    height: 50px;
-    text-align: center; 
-    justify-content: center;
-    align-items: center;
-    background-color: #0c0426;
-    transition: border 1s, transform 2s;
-    box-shadow: inset 0 0 0 0 #bb173b;
-    transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
-    text-align: center;
-    cursor: pointer;
-    /*border: solid rgb(226, 226, 226) 0.1px;*/ 
-}
 
-.g-button:hover {
-    box-shadow: inset 200px 0 0 0 #ffffff;
-    color: rgb(14, 0, 51);
-}
-.g-button:hover .arrow {
-    opacity: 100;
-}
-.g-butt-txt {
-    font-size: 20px;
-    padding-top: 15px;
-}
-/*SECTION5*/
+
+/*PROJECTS GALLERY*/
 .projects{
     width: 100%;
     position: relative;
-    bottom: 74px;
+    bottom: 76px;
     text-align: center;  
-    background-color: #03010c; 
+    background-color: #150f31; 
 }
 @media only screen and (max-width: 700px) {
     .projects{
-        background-color: rgba(0, 0, 0, 0);     
+        background-color: #150f31;     
     }
   }
   .projects-background{
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     
   }
 .projecthead-wrapper{
@@ -1259,13 +1300,17 @@ nav {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    padding: 30px 0 50px 0;
+    border-radius: 15px;
 }
 @media only screen and (max-width: 700px) {
     .projects-wrapper{
         background-color: #000000;
         width: 90%;
         border-radius: 5px;   
+        margin-bottom: 0px;
+        padding-bottom: 10px;
     }
   }
 .project{
@@ -1517,10 +1562,97 @@ nav {
 .next:hover {
   background-color: rgba(82, 82, 82, 0.452);
 }
+.bluebot-asset-projects{
+    position: relative;
+    rotate: 180deg;
+    bottom: 100px;
+   
+}
 /*footermenu*/
 .footermenu{
     text-align: center;
 }
+
+/*ABOUT US*/
+.aboutus{
+   min-height: 50vh;
+   color: #150f31;
+}
+.abouthead{
+    position: relative;
+    bottom: 100px;
+    padding: 0;
+}
+.asset1{
+
+}
+.gradient-asset{
+    position: absolute;
+    width: 33vh;
+    margin-top: -50px;
+}
+.gradient-asset-mobile{
+    display: none;
+}
+.bluebot-asset{
+    position: relative;
+    bottom: 70px;
+    min-width: 100%;
+}
+.abouttxtcont{
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 700px){
+    
+    .abouthead{
+        position: relative;
+        bottom: 20px;
+    }
+    .abouttxtcont{
+        position: relative;
+        width: 70%;
+        margin: auto;
+        font-size: 1.2rem;
+        bottom: 0px;
+    }
+     .gradient-asset-mobile{
+        position: relative;
+        display: block;
+        bottom: 0px;
+        rotate: -5deg;
+        right: 30px;
+    }
+    .bluebot-asset-projects{
+        bottom: 80px;
+       
+    }
+}
+@media only screen and (min-width: 1000px){
+    .gradient-asset-mobile{
+        bottom: 0px;
+        rotate: 0deg;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .gradient-asset{
+        display: none;
+        position: absolute;
+        rotate: 10deg;
+        left: -100px;
+        height: 100vh;
+        margin-top: -50px;
+    }
+    .gradient-asset-mobile{
+        position: relative;
+        display: block;
+        bottom: 0px;
+        rotate: -5deg;
+        right: 30px;
+    }
+}
+
 /*FOOTER*/
 .footer{  
     bottom: 0;
