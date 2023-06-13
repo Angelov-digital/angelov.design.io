@@ -53,55 +53,88 @@
 </head>
 
 <body>
+     <!-- MOBILE AVIGATION --> 
+     <div id="navmobile">
+        <div id="menuToggle">
 
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+           
+                    <a href="#services">
+                        <p class="">Services</p>
+                    </a>
+          
+         
+                    <a href="#aboutscrollanchor">
+                        <p class="">About</p>
+                    </a>
+        
+                    <a href="#work-projects">
+                        <p class="">Gallery</p>
+                    </a>
+         
+                    <a href="hireus.html">
+                        <p class="">Contact</p>
+                    </a>
+      
+            </ul>
+        </div>
+    </div>  
+<!-- MAIN --> 
     <section class="main-container">
+        
         <div class="namewrapper">
+
             <p class="A">A</p>
             <p class="name animate__animated animate__fadeInDown animate__delay-1s">Angelo Design</p>
             <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Visual & Website Studio</p>
             <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-5s" src="img/icon/arrowDown.svg" onclick="scrollToDiv('#scrollanchor')">
-        </div>
-        
+        </div> 
     </section>
-
     <div id="scrollanchor"></div>
+
 <!-- NAVIGATION --> 
-    <div id="navWrap">
-        
-        <nav>
+    <div id="navWrap">     
+        <nav class="mainnav">
+            <div id="navframe">
+                <a class="cta2 hide" href="index.html" id="logo">
+                    <img class="logo" src="img/svg/final_logocolor.svg">
+                </a>    
 
-            <a class="cta2 hide" href="index.html" id="logo">
-                <img class="logo" src="img/svg/final_logocolor.svg">
-            </a>    
+                <div id="">
+                    <a href="#services">
+                        <p class="nav-link">Services</p>
+                    </a>
+                </div>
 
-            <div id="">
-                <a href="#services">
-                    <p class="nav-link">Services</p>
-                </a>
-            </div>
+                <div id="">
+                    <a href="#aboutscrollanchor">
+                        <p class="nav-link">About</p>
+                    </a>
+                </div>
 
-            <div id="">
-                <a href="#aboutscrollanchor">
-                    <p class="nav-link">About</p>
-                </a>
-            </div>
+                <div id="">
+                    <a href="#work-projects">
+                        <p class="nav-link">Gallery</p>
+                    </a>
+                </div>
 
-            <div id="">
-                <a href="#work-projects">
-                    <p class="nav-link">Gallery</p>
-                </a>
-            </div>
-
-            <div id="">
-                <a href="hireus.html">
-                    <p class="nav-link">Contact</p>
-                </a>
+                <div id="">
+                    <a href="hireus.html">
+                        <p class="nav-link">Contact</p>
+                    </a>
+                </div>
             </div>
         </nav>
 
         <div id="customID" class="cta hide"></div>
         
     </div>    
+   
     
 <!-- NAVIGATION SIDE--> 
     <div class="sidebar" id="sidebar">
