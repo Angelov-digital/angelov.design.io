@@ -87,6 +87,12 @@
     text-align: left;
     color: #0a0022;
 }
+.header1light{
+    font-size: 2vw;
+    font-family: be;
+    text-align: left;
+    color: #ffffff;
+}
 .header2{
     font-size: 4vw;
     font-family: be;
@@ -519,7 +525,7 @@ nav {
   }
 /*SECTION1*/
 .main-container {
-    background-image: url("img/plasmamorph.jpg");
+    background-image: url("img/plasmamorph.webp");
     background-color: #0f0f0f;
     height: auto;
     width: 100%;
@@ -618,7 +624,7 @@ nav {
     position: relative;
     top: -77px; 
     width: 100%;
-    background-image: url(img/gradientv4hard.jpg);
+    background-image: url(img/plasmamorph.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -865,7 +871,6 @@ nav {
     position: relative;
     top: -76px;
     color: #03010c;
-    background-image: url(img/gradientv4hard.jp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1701,7 +1706,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     top: 0;
     width: 100%;
-    background-color: #0a0122de;
+    background-color: #04010e;
     z-index: 99;
     height: 70px;    
     justify-items: center;
