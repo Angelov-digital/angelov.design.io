@@ -98,105 +98,43 @@ win.scroll(function(event) {
 });
 
 
-//SHOW IMAGE FULLSCREEN OPTION1
-//function getPics() {} //just for this demo
-//const imgs = document.querySelectorAll('.project img');
-//const fullPage = document.querySelector('#fullpage');
-
-//imgs.forEach(img => {
- // img.addEventListener('click', function() {
-  //  fullPage.style.backgroundImage = 'url(' + img.src + ')';
-  //  fullPage.style.display = 'block';
- // });
-//});
-
-
-
-//SHOW IMAGE FULLSCREEN OPTION2 MODAL
-// Get the modal
-var modal = document.getElementById("project1-modal");
-var modal2 = document.getElementById("project2-modal");
-var modal3 = document.getElementById("project3-modal");
-var modal4 = document.getElementById("project4-modal");
-var modal5 = document.getElementById("project5-modal");
-var modal6 = document.getElementById("project6-modal");
-
-
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var trigger = document.getElementById("project1");
-var trigger2 = document.getElementById("project2");
-var trigger3 = document.getElementById("project3");
-var trigger4 = document.getElementById("project4");
-var trigger5 = document.getElementById("project5");
-var trigger6 = document.getElementById("project6");
-
-
-
-//var modalImg = document.getElementById("img01");
-//var captionText = document.getElementById("caption");
-
-//Triggerz
-trigger.onclick = function(){
-  modal.style.display = "block";
-  
-  
-}
-trigger2.onclick = function(){
-  modal2.style.display = "block";
-  
-  
-}
-trigger3.onclick = function(){
-  modal3.style.display = "block";
-  
-  
-}
-trigger4.onclick = function(){
-  modal4.style.display = "block";
-  
-  
-}
-trigger5.onclick = function(){
-  modal5.style.display = "block";
-  
-  
-}
-trigger6.onclick = function(){
-  modal6.style.display = "block";
-  
-  
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
 }
 
-
-
-// Get the <span> element that closes the modal
-var span1 = document.getElementById("close1");
-var span2 = document.getElementById("close2");
-var span3 = document.getElementById("close3");
-var span4 = document.getElementById("close4");
-var span5 = document.getElementById("close5");
-var span6 = document.getElementById("close6");
-
-
-
-// When the user clicks on <span> (x), close the modal
-span1.onclick = function() {
-  modal.style.display = "none";
-}
-span2.onclick = function() {
-  modal2.style.display = "none";
-} 
-span3.onclick = function() {
-  modal3.style.display = "none";
-} 
-span4.onclick = function() {
-  modal4.style.display = "none";  
-} 
-span5.onclick = function() {
-  modal5.style.display = "none";  
-} 
-span6.onclick = function() {
-  modal6.style.display = "none";  
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
 }
 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

@@ -612,9 +612,6 @@ body {
     text-decoration: none; 
   }
 @media only screen and (max-width: 700px) {
-    .sidebar a {
-        
-      }
     .sidebar{
         width: 70px;
     }
@@ -924,6 +921,7 @@ body {
     width: 40%;
     color: #03010c;
     top: 50px;
+    font-size: 1.2vw;
 }
 .learnmorecont{
     width: 100%;
@@ -1450,7 +1448,7 @@ body {
     flex-wrap: wrap;
     justify-content:center ;
     background-color: #04010e;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -1505,7 +1503,7 @@ body {
     overflow: hidden;
     transition: 0.7s ease;
     z-index: 10;
-    background-color: #090020e0;
+    background-color: #04000fe0;
     white-space: nowrap;
     align-items: center;
     padding-left: 10px;
@@ -1570,69 +1568,119 @@ body {
     opacity: 1;
   }
 
-#project1-modal,
-#project2-modal,
-#project3-modal,
-#project4-modal,
-#project5-modal,
-#project6-modal,
-#project7-modal,
-#project8-modal,
-#project9-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 60px; /* Location of the box */
+  /* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 100px;
     left: 0;
-    top: 0px;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.781); /* Black w/ opacity */
-    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
   }
   /* Add Animation - Zoom in the Modal */
-.modal-head{
-    font-size: 3.5rem;
-    text-align: left;
-    margin-left: 5%;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-family: be;
-}
-.modal-description{
-    margin: 20px;
-}
-.modal-frame{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 .modal-content{
-    display: block;
-    height: 40vh;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 90%;
     animation-name: zoom;
     animation-duration: 0.6s;
     margin-bottom: 20px;
-  }
-.modal-contentvideo{
-    display: block;
-    height: 40vh;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-    margin-bottom: 20px;
-  }
-.modal-content-vertical{
-    display: block;
-    height: 70vh;
-    animation-name: zoom;
-    animation-duration: 0.6s;
   }
 
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+    font-family: be;
+    font-size: 3rem;
+  }
+  
+img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
