@@ -100,10 +100,11 @@
     color: #ffffff;
 }
 .header2{
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: be;
     text-align: center;
     padding: 40px;
+    color: #ffffff;
 
 }
 .header2b{
@@ -343,8 +344,8 @@ body {
 }
 .mainnav {
     position: relative;
-    top: -70px;
-    height: 70px;
+    top: -170px;
+    height: 75px;
     padding: 20px 0px;
     width: 100%;
     z-index: 999999;
@@ -487,8 +488,8 @@ body {
 .navlink{
     position: relative;
     bottom: 10px;
-    font-size: 1.1vw;
-    font-family: spartansemi;
+    font-size: 1.6rem;
+    font-family: spartanlight;
     box-shadow: inset 0 0 0 0 #ffffff;
     transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
     padding: 12px 33px;
@@ -946,7 +947,7 @@ body {
 
 .motoCont{
     margin-left: 10vh;
-    margin-top: 3vw;
+    margin-top: 1vw;
     color: white;
 }
 .sublandpage{
@@ -981,16 +982,16 @@ body {
     right: 0;
 }
 .whatwedocont{
-    width: 50%;
+    width: 60%;
 }
 .whatwedo:hover{
     -webkit-animation: pulse 1s;
     animation: pulse 1s;
 }
 .whatwedo{
-    font-family: spartansemi;
+    font-family: be;
     color:#ffffff;
-    font-size: 2.5vw;
+    font-size: 3vw;
     text-align: left;
 }
 .scrollmore{
@@ -1001,9 +1002,10 @@ body {
 }
 .metatxtcont{
     position: relative;
-    width: 40%;
+    top: 5vh;
+    width: 38%;
     color: #ffffff;
-    top: 50px;
+    
     font-size: 1.2vw;
 }
 .learnmorecont{
@@ -1080,22 +1082,21 @@ body {
 /*SECTION3*/
 .approach{
     position: relative;
-    top: -76px;
     color: #03010c;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    background-color: #150f31;
+    background: linear-gradient(to bottom,  #070419d0, #000000c2);
     padding-bottom: 20px;
+    outline: top solid 1px white;
     
 }
 .apphead{
     position: relative;
-    padding: 0;
-    bottom: 20px;
-    color: #e4ddfc;
-    padding-bottom: 15px;
+    padding: 30px;
+    color: #ffffff;
+    
 }
 .appcont{
     display: flex;
@@ -1143,8 +1144,7 @@ body {
 .servicesec{
     position: relative;
     padding-top: 0px;
-    top: -78px;
-    background-color: #04010e;
+    background-color: #000000c2;
     background-size: cover;
     background-position: center;
 }
@@ -1159,8 +1159,7 @@ body {
 
 
 .service-img{
-   
-   
+
     width: 150px;
     -webkit-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
@@ -1268,7 +1267,7 @@ body {
 
 .servcontline{
     outline: solid #e4ddfc 1px;
-    background-color: #0a051a;
+    background-color: #00000096;
     border-radius: 20px;
     width: 100%;
     padding-left: 5vh;
@@ -1283,7 +1282,7 @@ body {
 
 }
 .servback{
-    background-color: #0A051A;
+    
     padding-left: 20px;
 }
 @media only screen and (max-width: 700px) {
