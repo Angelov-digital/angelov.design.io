@@ -35,6 +35,12 @@
     font-weight: light;
 
 }
+@font-face {
+    font-family: azonix;
+    src: url(fonts/Azonix.otf);
+    font-weight: light;
+
+}
 
 .gradient-hover-effect {   
     outline: solid 1px #e4ddfc;
@@ -478,7 +484,7 @@ body {
     transform: all 0.5s;
 }
 
-.nav-link {
+.navlink{
     position: relative;
     bottom: 10px;
     font-size: 1.1vw;
@@ -486,14 +492,83 @@ body {
     box-shadow: inset 0 0 0 0 #ffffff;
     transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
     padding: 12px 33px;
-    border-radius: 50px;
+    
     color: #ffffff;
-    outline: 1px solid white;
+    
     box-shadow: inset 0 0 0 0 #9c083a9f;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
 }
+.navlink:before {
+    outline: 1px solid white;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    -webkit-backface-visibility: hidden;
+  }
+  
+.left:before {
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+  
+.left:hover:before {
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+
+.slide-from-left {
+    left: -100%; /* Start the element off-screen to the left */
+    animation: slideInFromLeft 1s ease forwards; /* Initial animation properties */
+}
+
+.animate-slide-in {
+    animation: slideInFromLeftDelayed 1s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 2.2s; /* Delay the animation of the first element by 0.2 seconds */
+}
+
+.delay-2 {
+    animation-delay: 2.4s; /* Delay the animation of the second element by 0.4 seconds */
+}
+
+.delay-3 {
+    animation-delay: 2.6s; /* Delay the animation of the third element by 0.6 seconds */
+}
+
+.delay-4 {
+    animation-delay: 2.8s; /* Delay the animation of the fourth element by 0.8 seconds */
+}
+
+@keyframes slideInFromLeft {
+    to {
+        left: 0; /* Move the element to its original position */
+    }
+}
+
+@keyframes slideInFromLeftDelayed {
+    to {
+        left: 0; /* Move the element to its original position */
+    }
+}
+
+
 .nav-link:hover, .nav-link:focus {
     box-shadow: inset 300px 0 0 0 #9c083a9f;
     color: #dfecff;
@@ -642,7 +717,6 @@ body {
     position: absolute; /*fixed position later will be cool*/
     height: auto;
     width: 100%;
-    height: ;
     margin-top: 30vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -1437,8 +1511,7 @@ body {
   }
   .projects-background{
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 0px;
+    
     
   }
 .projecthead-wrapper{
