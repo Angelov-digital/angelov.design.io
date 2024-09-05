@@ -45,6 +45,14 @@
     font-weight: light;
 
 }
+
+.aquire{
+    font-family: aquire;
+}
+.be{
+    font-family: be;
+}
+
 .glasss{
     background: linear-gradient(-165deg, rgba(255, 255, 255, 0.342), rgba(255, 255, 255, 0.13));
     backdrop-filter: blur(10px);
@@ -214,6 +222,7 @@
     border-top: 0px solid white;
     margin-right: 25%;
     width: 100%;   
+
 }
 
 /*gradienttext*/
@@ -257,7 +266,6 @@ li{
     margin-top: 10px;
 }
 body {
-   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -356,9 +364,8 @@ body {
 }
 .mainnav {
     position: relative;
-    top: -170px;
+    top: -100px;
     height: 75px;
-    padding: 20px 0px;
     width: 100%;
     z-index: 999999;
     text-align: center;
@@ -369,6 +376,8 @@ body {
 }
 
 #navframe{
+    position: relative;
+    top: 2px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -500,14 +509,12 @@ body {
 .navlink{
     position: relative;
     bottom: 10px;
-    font-size: 1.6rem;
-    font-family: spartanlight;
+    font-size: 1.7rem;
+    font-family: be;
     box-shadow: inset 0 0 0 0 #ffffff;
     transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
-    padding: 12px 33px;
-    
+    padding: 8px 40px;
     color: #ffffff;
-    
     box-shadow: inset 0 0 0 0 #9c083a9f;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
@@ -730,7 +737,7 @@ body {
     position: absolute; /*fixed position later will be cool*/
     height: auto;
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 20vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -738,7 +745,7 @@ body {
     z-index: 1;
 }
 .lespacer{
-    height: 100vh;
+    height: 80vh;
 }
 .background3d{
     position: fixed;
@@ -798,8 +805,8 @@ body {
     font-family: aquire; 
 }
 .designer{
-    font-size: 1.35vw;
-    font-family: spartanlight;
+    font-size: 1.5vw;
+    font-family: be;
     text-align: right;
 }
 #scrollanchor{
@@ -815,7 +822,7 @@ body {
       margin: 10px;
     }
     .designer{
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         margin-top: 30px;
     }
@@ -833,11 +840,9 @@ body {
 @media only screen and (min-width: 1600px){
     .name {
         font-size: 5rem;
-        margin: 10px;
       }
     .designer{
           font-size: 2rem;
-          margin-top: 25px;
       }
 }
 /*Ourscope section*/
