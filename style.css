@@ -41,6 +41,14 @@
     font-weight: light;
 
 }
+.glasss{
+    background: linear-gradient(-165deg, rgba(255, 255, 255, 0.342), rgba(255, 255, 255, 0.13));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
 
 .gradient-hover-effect {   
     outline: solid 1px #e4ddfc;
@@ -946,7 +954,6 @@ body {
 /*SECTION2*/
 
 .motoCont{
-    margin-left: 10vh;
     margin-top: 1vw;
     color: white;
 }
@@ -982,17 +989,19 @@ body {
     right: 0;
 }
 .whatwedocont{
-    width: 60%;
+    width: 100%;
 }
-.whatwedo:hover{
+.popis1:hover{
     -webkit-animation: pulse 1s;
     animation: pulse 1s;
 }
-.whatwedo{
+.popis1{
+    padding-top: 10px;
     font-family: be;
     color:#ffffff;
     font-size: 3vw;
-    text-align: left;
+    text-align: right;
+    width: 90%;
 }
 .scrollmore{
     position: absolute;
@@ -1000,13 +1009,19 @@ body {
     padding: 20px;
     text-align: left;
 }
-.metatxtcont{
-    position: relative;
-    top: 5vh;
-    width: 38%;
-    color: #ffffff;
-    
-    font-size: 1.2vw;
+
+.popis{
+    text-align: right;
+    padding-right: 11vw;
+    font-size: 1.2rem;
+
+}
+.container{
+    position: absolute;
+    top: 8vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
 }
 .learnmorecont{
     width: 100%;
@@ -1116,21 +1131,22 @@ body {
 .appdesc{
     font-family: spartansemi;
     font-size: 1.2rem ;
+    color: white;
 }
 .appdesc2{
     font-family: spartanlight;
+    color: white;
 }
 .appcard{
     width: 400px;
     height: 220px;
     padding: 0px 30px 13px 30px;
-    outline: solid 1px #e4ddfc;
-    border-radius: 15px;
     margin: 20px;
     margin-top: 0;
     justify-content: left;
-    border-radius: 15px;
-    background-color:#e4ddfc ; 
+    border:1px solid rgba(255, 255, 255, 0.493);
+
+  
 }
 .appimg{
     width: 110px;
@@ -1150,11 +1166,9 @@ body {
 }
 
 .indigo{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 10vw;
     padding-right: 10vw;  
+   
 }
 
 
@@ -1415,13 +1429,14 @@ body {
 
 /*Contact*/
 .contact{
-    background-color: #e4ddfc;
     position: relative;
-    top: -100px;
+    top: -10px;
     text-align: center;
     font-size: 15px;
     padding-bottom: 50px;
-    color: #03010c;
+    color: #ffffff;
+    background-color: #000000c2;
+
 }
 
 .contact p {

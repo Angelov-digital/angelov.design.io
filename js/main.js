@@ -142,14 +142,3 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-
-
-// Trigger the delayed animation when the window is loaded
-window.onload = function() {
-  setTimeout(function() {
-    document.querySelectorAll('.slide-from-left').forEach(function(element, index) {
-      element.classList.add('animate-slide-in');
-      element.classList.add('delay-' + (index + 1)); // Apply the respective delay class
-    });
-  }, 5000); // Delay the animation for 5 seconds (5000 milliseconds)
-};
