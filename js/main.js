@@ -30,9 +30,9 @@ $(document).scroll(function () {
   var y = $(this).scrollTop();
   var navWrap = $('#navWrap').offset().top;
   if (y > navWrap) {
-      $('nav').addClass('sticky');
+      $('nav').addClass('sticked');
   } else {
-      $('nav').removeClass('sticky');
+      $('nav').removeClass('sticked');
   }
 });
 

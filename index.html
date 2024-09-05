@@ -16,12 +16,16 @@
     <meta name="keywords" content="Graphic design, Web design, Website design, Responsive design, User experience (UX) design, User interface (UI) design, Branding, Logo design, Visual identity, Typography, Color theory, Illustration, Animation, Infographic design, Print design, Packaging design, Content creation, Social media design, SEO optimization, Mobile-friendly design, E-commerce functionality, Content management system (CMS), HTML/CSS coding, Responsive design frameworks, WordPress customization, Image optimization, Analytics tracking">
     <meta name="description" content="Welcome to our graphic design studio, where creative visualization and aesthetic appeal come together to deliver exceptional designs for your brand. Our professional team of graphic designers specializes in creating dynamic visual designs that align with your brand values to capture the attention of your target audience and leave a lasting impression. Our graphic design services include logo design, branding, website design, packaging design, print design, and more. As a one-stop-shop for all your design needs, our services are tailored to your individual requirements, ensuring your brand stands out in a crowded market. Contact us now to learn how we can create unique designs that tell your brand story and elevate your business to the next level.">
     <meta name="author" content="Angelo Design">
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link href="./dist/style.css" rel="stylesheet">
+
     <link rel="shortcut icon" type="image/jpg" href="img/arsmediafavicon2.jpg"/>
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- PrimeIcons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/primeicons@6.0.1/primeicons.css" rel="stylesheet">
     <title>Ars media</title>
 
     <style>
@@ -37,13 +41,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/three.min.js"></script>
     <script src="js/GLTFLoader.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.1.9/build/spline-viewer.js"></script>
-    
-
-
-
-
-    
-
+    Tailwind CDN 
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
     <script>
         function scrollToLocation(scrollPosition) {
             window.scrollTo({
@@ -56,7 +56,6 @@
             div.scrollIntoView({behavior: 'smooth'});
         }
     </script>
-
 </head>
 <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
@@ -64,8 +63,6 @@
       async
       src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js">
 </script>
-
-
 <script type="importmap">
   {
     "imports": {
@@ -80,64 +77,45 @@
 <script defer src="src/libs/perlin.js"></script>
 <script defer src="src/libs/CPerlin.js"></script>
 <script src="./src/config.js"></script>
-
 <script type="module" src="js/3d.js"></script>
-
 
 <body>
      <!-- MOBILE AVIGATION --> 
      <div id="navmobile">
         <div id="menuToggle">
-
             <input type="checkbox"/>
             <span></span>
             <span></span>
             <span></span>
-
             <ul id="menu">
-           
-                    <a href="#services">
-                        <p class="">Services</p>
-                    </a>
-          
-         
-                    <a href="#aboutscrollanchor">
-                        <p class="">About</p>
-                    </a>
-        
-                    <a href="#work-projects">
-                        <p class="">Gallery</p>
-                    </a>
-         
-                    <a href="hireus.html">
-                        <p class="">Contact</p>
-                    </a>
-      
+                <a href="#services">
+                    <p class="">Services</p>
+                </a>
+                <a href="#aboutscrollanchor">
+                    <p class="">About</p>
+                </a>
+                <a href="#work-projects">
+                    <p class="">Gallery</p>
+                </a>
+                <a href="hireus.html">
+                    <p class="">Contact</p>
+                </a>
             </ul>
         </div>
     </div>  
 <!-- MAIN --> 
     <spline-viewer class="splineCanvas" url="https://prod.spline.design/wj0xvs85KetwbdYh/scene.splinecode"></spline-viewer>
-
-   
-
-
     <div class="background3d"></div>
-    
-    <section class="main-container">
-        
+    <section class="main-container">       
         <div class="namewrapper">
-
-            <p class="A">A</p>
+            <p class="Ahero">A</p>
             <p class="name animate__animated animate__fadeInDown animate__delay-1s">ARS MEDIA</p>
             <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Digital Design Studio</p>
             <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-5s" src="img/icon/arrowDown.svg" onclick="scrollToDiv('#scrollanchor')">
         </div> 
     </section>
     <div id="scrollanchor"></div>
-
     <div class="lespacer"></div>
-
 <!-- NAVIGATION --> 
     <div id="navWrap">     
         <nav class="mainnav">
@@ -145,39 +123,30 @@
                 <a class="cta2 hide" href="index.html" id="logo">
                     <img class="logo" src="img/svg/LogoWhite.svg">
                 </a>    
-
                 <div id="">
                     <a href="#services">
                         <p class="navlink left slide-from-left delay-1">Služby</p>
                     </a>
-                </div>
-                
+                </div>  
                 <div id="">
                     <a href="#aboutscrollanchor">
                         <p class="navlink left slide-from-left delay-2">O nás</p>
                     </a>
-                </div>
-                
+                </div>  
                 <div id="">
                     <a href="#work-projects">
                         <p class="navlink left slide-from-left delay-3">Galerie</p>
                     </a>
-                </div>
-                
+                </div>               
                 <div id="">
                     <a href="hireus.html">
                         <p class="navlink left slide-from-left delay-4">Kontakt</p>
                     </a>
-                </div>
-                
+                </div>               
             </div>
         </nav>
-
-        <div id="customID" class="cta hide"></div>
-        
-    </div>    
-   
-    
+        <div id="customID" class="cta hide"></div>     
+    </div>     
 <!-- NAVIGATION SIDE--> 
     <div class="sidebar" id="sidebar">
         <aside class="aside">
