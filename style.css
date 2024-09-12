@@ -266,12 +266,15 @@ li{
     margin-top: 10px;
 }
 body {
-    background-position: center;
+   
+    background-size: contain;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
     max-width: 100%;
     z-index: 0;
+
 }
+
 .spacer{
     height: 50px;
 }
@@ -749,8 +752,9 @@ body {
 }
 .background3d{
     position: fixed;
-    background-image: url("img/plasmamorph.webp");
+    background-image: url("img/iridescent.jpg");
     width: 100%;
+    max-width: 100%;
     height: 100vh;
     z-index: -1;
     background-position: center;

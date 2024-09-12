@@ -41,7 +41,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/three.min.js"></script>
     <script src="js/GLTFLoader.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.1.9/build/spline-viewer.js"></script>
-    Tailwind CDN 
+   
     <script src="https://cdn.tailwindcss.com"></script>
  
     <script>
@@ -64,12 +64,7 @@
       src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js">
 </script>
 <script type="importmap">
-  {
-    "imports": {
-      "three": "https://unpkg.com/three/build/three.module.js",
-      "three/addons/": "https://unpkg.com/three/examples/jsm/"
-    }
-  }
+
 </script>
 
 <script defer src="src/libs/mod3.js"></script>
@@ -109,7 +104,7 @@
     <section class="main-container">       
         <div class="namewrapper">
             <div class="flex justify-center items-center">
-                <img src="img/svg/A.svg" alt="Logo" class="max-w-xs">
+                <img src="img/svg/A.svg" alt="Logo" class="max-w-[60%]">
             </div>
             <div class=""></div>
                 <p class="name animate__animated animate__fadeInDown animate__delay-1s">ARS MEDIA</p>      
@@ -129,22 +124,22 @@
                 </a>    
                 <div id="">
                     <a href="#services">
-                        <p class="navlink left slide-from-left delay-1">Služby</p>
+                        <p class="navlink left slide-from-left delay-1">Services</p>
                     </a>
                 </div>  
                 <div id="">
                     <a href="#aboutscrollanchor">
-                        <p class="navlink left slide-from-left delay-2">O nás</p>
+                        <p class="navlink left slide-from-left delay-2">About us</p>
                     </a>
                 </div>  
                 <div id="">
                     <a href="#work-projects">
-                        <p class="navlink left slide-from-left delay-3">Galerie</p>
+                        <p class="navlink left slide-from-left delay-3">Gallery</p>
                     </a>
                 </div>               
                 <div id="">
                     <a href="hireus.html">
-                        <p class="navlink left slide-from-left delay-4">Kontakt</p>
+                        <p class="navlink left slide-from-left delay-4">Contact us</p>
                     </a>
                 </div>               
             </div>
@@ -170,31 +165,36 @@
 <!-- SUBLANDING PAGE --> 
     <section class="sublandpage" id="aboutus">
 
-        <div class="aboutimgcont">
-            <img class="aboutimg" src="img/ilustrace/Dark iphone holomorphite4.png">
-        </div>  
-            <div class="aboutwrap">  
-                <div class="flex justify-center text-center pt-2">
-                    <p class="be text-6xl">New generation of interactive graphics</p>
-                </div>
-                <div class="pt-12 flex justify-end">
-                    <div class="w-1/2">
-                      <p class="text-right pr-[15%]">
+        <div class="flex justify-center text-center pt-2">
+            <p class="be text-5xl">We are creating a new generation<br>of interactive graphics and art.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+            <!-- First div -->
+            <div class="w-full md:w-1/2 pt-14 pl-[10%]">
+                <img class="aboutimg animate__animated animate__fadeIn min-w-[400px]" src="img/ilustrace/phone2.png">
+            </div>
+            
+            <!-- Second div -->
+            <div class="w-full md:w-1/2 pt-14 flex justify-end">
+                <div>
+                    <p class="text-right pr-[15%] pl-4 text-xl">
                         At Ars media, we redefine digital design by merging cutting-edge technology with artistic excellence. 
                         Our team of visionary designers and developers 
                         crafts bespoke solutions that not only elevate your brand but also captivate and engage your audience. 
-                        From sleek, modern interfaces to immersive experiences, we push the boundaries of what's possible, 
+                        <br>
+                        <br>From sleek, modern interfaces to immersive experiences, we push the boundaries of what's possible, 
                         ensuring that your project stands out in the digital landscape. Let us bring your vision to life with innovation and style.
-                         <!--
-                        Created to the customer´s custom needs, combining the most modern technologies and the highest graphic standard, our studio brings you a new way to make your project visible. 
+                        <!--
                         Kombinací nejmoderněších technologií a nejvyššího grafického standartu Vám přinášíme nový způsob, kterým se zviditelnit. 
                         Naše služby nejsou pouze funkčním produktem, ale moderním užitým uměním v éře digitálního věku. -->
-                      </p>
-                    </div>
-                  </div>
-                  
+                    </p>
+                </div>
             </div>
-        </div> 
+        </div>
+            
+        
+       
            
             <!--<p class="scrollmore">Scroll for more info</p>!-->
         <dic class="flex-col justify-center text-center">
@@ -341,28 +341,28 @@
                 
                 <div class="appcont2">
                     <img src="img/icon/light_modernity.svg" class="appimg"> 
-                    <p class="appdesc">Modernity</p> 
+                    <p class="be text-2xl text-white">Modern<br>technologies</p> 
                 </div>
-                <p class="appdesc2">In our work we prioritizes a latest technologies and tools to deliver enhanced user experience in our products.  </p>
+                <p class="appdesc2">In our work we prioritizes a latest technologies and tools to deliver enhanced user experience in our solutions.  </p>
             </div>
 
             <div class="appcard glass">
                 
                 <div class="appcont2">
                     <img src="img/icon/light_artism.svg" class="appimg"> 
-                    <p class="appdesc">Artism</p> 
+                    <p class="be text-2xl text-white">Artistic<br>aesthetics</p> 
                 </div>
                 <p class="appdesc2">We focus on creating a visually captivating and imaginative unique aesthetic that stands out.  </p>
             </div>
 
             <div class="appcard glass">
-                
                 <div class="appcont2">
-                    <img src="img/icon/light_marketing.svg" class="appimg"> 
-                    <p class="appdesc">Marketing</p> 
+                    <img src="img/icon/user-02.svg" class="appimg"> 
+                    <p class="be text-2xl text-white">Individual<br>Approach</p> 
                 </div>
-                <p class="appdesc2">Functional relevant products that increases profit for your company or projects.  </p>
+                <p class="appdesc2">We create custom solutions designed to meet your specific project or company needs and drive attention.</p>
             </div>
+            
            
 
 

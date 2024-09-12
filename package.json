@@ -1,15 +1,13 @@
 {
-  "name": "your-project-name",
+  "name": "Ars-media",
   "version": "1.0.0",
   "dependencies": {
     "tailwindcss": "^3.4.10",
     "postcss": "^8.4.21",
     "autoprefixer": "^10.4.14"
   },
-  "devDependencies": {
-    "vite": "^5.2.10"
-  },
   "scripts": {
-    "build:css": "npx tailwindcss -i ./style.css -o ./dist/style.css --watch"
+    "watch:css": "npx tailwindcss -i ./style.css -o ./dist/style.css --watch",
+    "build:css": "npx tailwindcss -i ./style.css -o ./dist/style.css --minify"
   }
 }

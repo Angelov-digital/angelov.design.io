@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="uuid-6bb771c4-5c15-480a-be36-a4f5ba3e8395" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.46 283.46">
-  <defs>
-    <style>
-      .uuid-2022eb3b-7b0f-41a5-8545-0cc21c502f7b {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <path class="uuid-2022eb3b-7b0f-41a5-8545-0cc21c502f7b" d="m117.23,90.95l18.4,33.57-61.58,111.27h-36.99L117.23,90.95Zm135.52,144.84h-37l-70.85-128.02-18.49-33.41,18.48-33.4v-.02s18.51,33.42,18.51,33.42l89.35,161.43Z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="uuid-6bb771c4-5c15-480a-be36-a4f5ba3e8395"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 215.7 194.8"
+	 style="enable-background:new 0 0 215.7 194.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M80.2,50l18.4,33.6L37,194.8H0L80.2,50z M215.7,194.8h-37l-70.9-128L89.3,33.4L107.8,0v0l18.5,33.4L215.7,194.8
+	L215.7,194.8z"/>
 </svg>
