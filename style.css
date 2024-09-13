@@ -2209,3 +2209,99 @@ canvas {
     height: 100vh; /* Full viewport height */
     
 }
+
+/* Base button styles */
+.button {
+    position: relative;
+    color: #ffffff;
+    background-color:#232534;;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden; 
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: box-shadow 0.5 ease, transform 0.5 ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.5 ease;
+  }
+  /* Hover effect */
+  .button:hover {
+    animation: pulse 1s; /* Trigger pulse animation */
+    box-shadow: 2px 2px 5px rgba(0, 247, 255, 0.5);
+    box-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+  }
+  .buttonWhite{
+    text-align: center;
+    justify-content: center;
+    padding: 7px 28px 7px 28px;
+    font-family: InriaLightItalic;
+    font-size: 1.5rem;
+    color: #232534;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .buttonWhite:hover{
+    animation: pulse 1s; /* Trigger pulse animation */
+    box-shadow: 2px 2px 5px rgba(0, 247, 255, 0.5);
+    background-color: #232534;
+    color: #ffffff;
+  }
+  .buttonWhite2{
+    text-align: center;
+    justify-content: center;
+    padding: 7px 28px 7px 28px;
+    font-family: InriaLightItalic;
+    font-size: 1.5rem;
+    color: #232534;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .buttonWhite2:hover{
+    animation: pulse 1s; /* Trigger pulse animation */
+    box-shadow: 2px 2px 5px rgba(0, 247, 255, 0.5);
+    box-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+  }
+  .txtCyanGlow:hover{
+    text-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+  }
+  .shadowCyanGlow:hover{
+    box-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+  }
+  .animPulse:hover{
+    animation: pulse2 0.6s;
+  }
+  .svg-glow:hover {
+    filter: drop-shadow(0 0 5px rgba(150, 248, 255, 0.884)); /* Red glow */
+  }
+  /* Keyframes for the pulse effect */  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes pulse2 {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.25);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
