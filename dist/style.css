@@ -579,6 +579,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -3219,15 +3223,13 @@ canvas {
 .button {
   position: relative;
   color: #ffffff;
-  background-color:#232534;
+  background-color: #111111;
   border: none;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
-  transition: background-color 0.5s ease, transform 0.5s ease;
-  transition: box-shadow 0.5 ease, transform 0.5 ease;
+  transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.5 ease;
 }
 
 /* Hover effect */
@@ -3235,64 +3237,66 @@ canvas {
 .button:hover {
   animation: pulse 1s;
   /* Trigger pulse animation */
-  box-shadow: 2px 2px 5px rgba(0, 247, 255, 0.5);
-  box-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+  box-shadow: 0 0 10px rgba(246, 254, 255, 0.884);
 }
 
-.buttonWhite{
+.buttonWhite {
   text-align: center;
   justify-content: center;
-  padding: 7px 28px 7px 28px;
-  font-family: InriaLightItalic;
+  padding: 7px 28px;
+  font-family: be;
   font-size: 1.5rem;
-  color: #232534;
-  background-color: rgb(255, 255, 255);
+  color: #0e0e0e;
+  background-color: #ffffff;
   border-radius: 50px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
 
-.buttonWhite:hover{
+.buttonWhite:hover {
   animation: pulse 1s;
   /* Trigger pulse animation */
-  box-shadow: 2px 2px 5px rgba(0, 247, 255, 0.5);
-  background-color: #232534;
+  box-shadow: 0 0 10px rgba(246, 254, 255, 0.884);
+  background-color: #060814;
   color: #ffffff;
 }
 
-.buttonWhite2{
+.buttonWhite2 {
   text-align: center;
   justify-content: center;
-  padding: 7px 28px 7px 28px;
+  padding: 7px 28px;
   font-family: InriaLightItalic;
   font-size: 1.5rem;
   color: #232534;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   border-radius: 50px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s ease;
 }
 
-.buttonWhite2:hover{
+.buttonWhite2:hover {
   animation: pulse 1s;
   /* Trigger pulse animation */
-  box-shadow: 2px 2px 5px rgba(0, 247, 255, 0.5);
-  box-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+  box-shadow: 0 0 10px rgba(246, 254, 255, 0.884);
 }
 
-.txtCyanGlow:hover{
-  text-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+.txtCyanGlow:hover {
+  text-shadow: 0 0 10px rgba(246, 254, 255, 0.884);
+  transition: text-shadow 0.5s ease;
 }
 
-.shadowCyanGlow:hover{
-  box-shadow: 0 0 10px rgba(150, 248, 255, 0.884);
+.shadowCyanGlow:hover {
+  box-shadow: 0 0 10px rgba(246, 254, 255, 0.884);
+  transition: box-shadow 0.5s ease;
 }
 
-.animPulse:hover{
+.animPulse:hover {
   animation: pulse2 0.6s;
 }
 
 .svg-glow:hover {
-  filter: drop-shadow(0 0 5px rgba(150, 248, 255, 0.884));
-  /* Red glow */
+  filter: drop-shadow(0 0 5px rgba(246, 254, 255, 0.884));
+  transition: filter 0.5s ease;
 }
 
 /* Keyframes for the pulse effect */
