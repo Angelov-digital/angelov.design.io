@@ -767,6 +767,13 @@ body {
     top: 0;
     z-index: 0;
 }
+/* Hide element on screens smaller than 768px (commonly used breakpoint for mobile devices) */
+@media only screen and (max-width: 768px) {
+    .splineCanvas {
+      display: none;
+    }
+  }
+  
 .logotype{
     position: absolute;
     font-family: aquire;

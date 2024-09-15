@@ -575,12 +575,12 @@ video {
   margin-right: 10%;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -1628,6 +1628,14 @@ body {
   position: fixed;
   top: 0;
   z-index: 0;
+}
+
+/* Hide element on screens smaller than 768px (commonly used breakpoint for mobile devices) */
+
+@media only screen and (max-width: 768px) {
+  .splineCanvas {
+    display: none;
+  }
 }
 
 .logotype{
