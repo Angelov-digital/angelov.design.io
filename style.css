@@ -285,7 +285,6 @@ body {
     border-radius: 50px;
 }
 .social:hover, .social:focus {
-    background: linear-gradient(90deg, #0E0033, transparent) #CA1D43;
 }
 .arrowback{
     transition: background-color 0.9s;
