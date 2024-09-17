@@ -14,6 +14,7 @@ module.exports = {
         'shade': '#2325348C', 
         'dark' : '#17171e',
         'light-trans' : '#f8f3ffef',
+        'dark-trans' : '#110b25d8',
       },
     },
   },
