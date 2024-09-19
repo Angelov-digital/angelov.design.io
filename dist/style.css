@@ -608,6 +608,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -650,6 +654,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-\[50px\] {
+  max-width: 50px;
 }
 
 .cursor-pointer {
@@ -801,6 +809,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-center {
