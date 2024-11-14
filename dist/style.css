@@ -676,16 +676,16 @@ video {
   width: 4rem;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .w-auto {
   width: auto;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[50px\] {
-  width: 50px;
 }
 
 .min-w-\[400px\] {
@@ -886,17 +886,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
 
-.pb-14 {
-  padding-bottom: 3.5rem;
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pb-8 {
@@ -925,10 +920,6 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -1005,6 +996,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow {
@@ -1322,6 +1317,27 @@ video {
 
 .outline1px{
   border:1px solid rgba(255, 255, 255, 0.493);
+}
+
+.underline {
+  border-top: 1px solid rgba(255, 255, 255, 0.829);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.divider-horizont {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  /* Ensure full height of the container */
+  background-color: rgba(255, 255, 255, 0.829);
+  /* Visible white color */
+  z-index: 10;
+  /* Ensure it sits above other elements */
 }
 
 /*gradienttext*/
