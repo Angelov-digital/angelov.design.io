@@ -215,7 +215,7 @@
             </div>
             <ul>
                 <li><i class="fas fa-palette fa-lg pr-4"></i> Branding & Logo Design</li>
-                <li><i class="fas fa-file-image fa-lg pt-4 pr-4"></i> Custom Promotion Graphics</li>
+                <li><i class="fas fa-file-image fa-lg pt-4 pr-4"></i> Custom Promotional Graphics</li>
                 <li><i class="fas fa-print fa-lg pt-4 pr-4"></i> Print & Publication Design</li>
             </ul>              
         </div>
@@ -237,8 +237,8 @@
             </div>
             <ul>
                 <li><i class="fas fa-laptop-code fa-lg pr-4"></i> Web & Digital Design</li>
-                <li><i class="fas fa-bullhorn fa-lg pt-4 pr-4"></i> Webpage and Promotion Creation</li>
-                <li><i class="fas fa-desktop fa-lg pt-4 pr-4"></i> Webpage and Promotion Creation</li>
+                <li><i class="fas fa-bullhorn fa-lg pt-4 pr-4"></i> Online Promotion Creation</li>
+                <li><i class="fas fa-desktop fa-lg pt-4 pr-4"></i> Custom Website Creation</li>
             </ul>
         </div>
         <hr class="divider-horizont">
@@ -250,7 +250,7 @@
     <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-dark-blue-trans">
         <div class="lg:w-1/2 px-10 py-10 flex flex-col items-center justify-center">      
             <h1 class="text-3xl text-light txt2 text-center font-inria-sans">
-                3D Visualizations and Object Printing
+                3D Visualizations and Prototypes
             </h1>
             <div class="centerFrame">
                 <p class="py-10 text-light">Transform your ideas into reality with our 3D visualization and printing services. From detailed architectural models to functional prototypes, we provide high-quality visualizations that bring your projects to life in immersive detail.</p>
@@ -273,11 +273,13 @@
                 Front-end Development
             </h1>
             <div class="centerFrame">
-                <p class="py-10 text-light">Our front-end development services focus on building fast, responsive, and visually stunning websites. By leveraging the latest technologies, we create seamless user interfaces that elevate your brand and ensure optimal performance across all devices.</p>
+                <p class="py-10 text-light">We are enhancing and redesign existing websites, making them visually stunning yet user oriented with correct UI/UX design choices.
+                    Let us handle to strike a spark into your old website, making it atractive by artistic and modern standarts.
+                    </p>
             </div>
             <ul>
                 <li><i class="fas fa-code fa-lg pr-4"></i> Front-End Development</li>
-                <li><i class="fas fa-code fa-lg pt-4 pr-4"></i> Interactive UI Development</li>
+                <li><i class="fas fa-code fa-lg pt-4 pr-4"></i>Existing Website Enhancement</li>
                 <li><i class="fas fa-mobile-alt fa-lg  pt-4 pr-4"></i> Responsive Design Implementation</li>
             </ul>
         </div>
@@ -548,6 +550,8 @@
     </section>
     <section class="darkblue-fill2">
         <div class="w-full text-center mb-6 pt-6">
+            <hr class="underline"></hr>    
+
             <p class="header2 text-white">About us</p>
         </div>
         <div class="max-w-[800px] px-8 mx-auto text-center flex items-center justify-center">
@@ -562,79 +566,95 @@
                 creativity and technology to deliver exceptional results for every project.
             </p>
         </div>
-        
-
     </section>
-
-    <section class="bg-light-trans pb-8 relative z-10">
+    <section class="bg-dark-blue-trans pb-8 relative z-10">
         <div class="">
             <div class="w-full text-center mb-2 pt-2">
+                <hr class="underline"></hr>    
                 <p class=" 
-                    text-4xl text-blue font-semibold be">
+                    header2 text-light">
                     Write us
                 </p>
             </div>
             <div class="flex justify-center items-center">
-                <i class="pi pi-envelope text-blue text-2xl"></i>
+                <i class="pi pi-envelope text-light text-2xl"></i>
             </div>
 
-            <div class="form bg-light mx-[10%] mt-6 shadow-xl">
-
+            <div class="form mx-[10%] mt-1 shadow-xl">
                 <form class="max-w-md mx-auto p-6 space-y-4">
+                    <!-- Name Input -->
+                    <div>
+                        <label for="name" class="font-inria-sans block text-sm font-medium text-light">Your Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="shadowCyanGlow font-inria-sans mt-1 block w-full px-3 py-2 bg-dark border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-white focus:border-light" 
+                            required>
+                    </div>
             
+                    <!-- Phone Input -->
                     <div>
-                        <label for="name" class="font-inria-sans block text-sm font-medium text-gray-700">Vaše jméno a příjmení</label>
-                        <input type="text" id="name" name="name" class="font-inria-sans mt-1 block w-full px-3 py-2 bg-white border border-gray-300 shadow focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                        <label for="phone" class="font-inria-sans block text-sm font-medium text-light">Mobile Phone (optional)</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            class="shadowCyanGlow font-inria-sans mt-1 block w-full px-3 py-2 bg-dark border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-white focus:border-light">
                     </div>
-
-               
+            
+                    <!-- Email Input -->
                     <div>
-                        <label for="phone" class="font-inria-sans block text-sm font-medium text-gray-700">Telefon (nepovinný)</label>
-                        <input type="tel" id="phone" name="phone" class="font-inria-sans mt-1 block w-full px-3 py-2 bg-white border border-gray-300 shadow focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <label for="email" class="font-inria-sans block text-sm font-medium text-light">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="shadowCyanGlow font-inria-sans mt-1 block w-full px-3 py-2 bg-dark border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-white focus:border-light" 
+                            required>
                     </div>
-
-             
+            
+                    <!-- Company Input -->
                     <div>
-                        <label for="email" class="font-inria-sans block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 shadow focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                        <label for="company" class="font-inria-sans block text-sm font-medium text-light">Company (optional)</label>
+                        <input 
+                            type="text" 
+                            id="company" 
+                            name="company" 
+                            class="shadowCyanGlow font-inria-sans mt-1 block w-full px-3 py-2 bg-dark border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-white focus:border-light">
                     </div>
-
-                
+            
+                    <!-- Message Textarea -->
                     <div>
-                        <label for="company" class="font-inria-sans block text-sm font-medium text-gray-700">Firma (nepovinné)</label>
-                        <input type="text" id="company" name="company" class="font-inria-sans mt-1 block w-full px-3 py-2 bg-white border border-gray-300 shadow focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <label for="message" class="font-inria-sans block text-sm font-medium text-light">Your Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="4" 
+                            class="shadowCyanGlow font-inria-sans mt-1 block w-full px-3 py-2 bg-dark border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-white focus:border-light">
+                        </textarea>
                     </div>
-
-               
+            
+                    <!-- Submit Button -->
                     <div>
-                        <label for="message" class="font-inria-sans block text-sm font-medium text-gray-700">Vaše zpráva</label>
-                        <textarea id="message" name="message" rows="4" class="font-inria-sans mt-1 block w-full px-3 py-2 bg-white border border-gray-300 shadow focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-
-           
-                    <div>
-
                         <button 
                             type="submit"
-                            class="button font-inria-bold text-center w-full justify-center 
-                            mt-4 mb-6 ml-3
+                            class="buttonWhite font-inria-bold text-center w-full justify-center 
+                            mt-4 mb-6
                             bg-blue bg-cover bg-center hover:bg-opacity-80 focus:outline-none
-                            py-2 text-xl rounded-full">
+                            py-2 text-xl">
                             Send message
                             <i class="pi pi-send"></i>
                         </button>
-                     
-
-                        
                     </div>
-                    </form>
-
-
-
+                </form>
             </div>
+            
         </div>
     </section>
-    
+
+
+
     <section class="contact" id="contactscroll">
         <p class="header2">Contact</p>
         <div class="contwrap">
@@ -668,7 +688,7 @@
     <!--If Hosting: this section contains direct messaging with php script (autoemail) -->
     <footer class="footer">
         
-        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ars Media All Rights Reserved</p>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Angelov-Design All Rights Reserved</p>
     </footer>
 
     <script src="js/main.js"></script>
