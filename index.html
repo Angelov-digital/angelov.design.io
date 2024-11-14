@@ -18,7 +18,6 @@
     <meta name="author" content="Angelo Design">
     <!--<link rel="stylesheet" href="style.css">-->
     <link href="./dist/style.css" rel="stylesheet">
-
     <link rel="shortcut icon" type="image/jpg" href="img/arsmediafavicon2.jpg"/>
     <link
         rel="stylesheet"
@@ -26,6 +25,9 @@
     />
     <!-- PrimeIcons CDN -->
     <link href="https://cdn.jsdelivr.net/npm/primeicons@6.0.1/primeicons.css" rel="stylesheet">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title>Ars media</title>
 
     <style>
@@ -57,22 +59,9 @@
         }
     </script>
 </head>
+
 <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
-<script
-      async
-      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js">
-</script>
-<script type="importmap">
-
-</script>
-
-<script defer src="src/libs/mod3.js"></script>
-<script defer src="src/libs/Three.js"></script>
-<script defer src="src/libs/perlin.js"></script>
-<script defer src="src/libs/CPerlin.js"></script>
-<script src="./src/config.js"></script>
-<script type="module" src="js/3d.js"></script>
 
 <body>
      <!-- MOBILE AVIGATION --> 
@@ -84,10 +73,10 @@
             <span></span>
             <ul id="menu">
                 <a href="#services">
-                    <p class="">Services</p>
+                    <p class="">Skills</p>
                 </a>
                 <a href="#aboutscrollanchor">
-                    <p class="">About</p>
+                    <p class="">About me</p>
                 </a>
                 <a href="#work-projects">
                     <p class="">Gallery</p>
@@ -108,8 +97,8 @@
                 <img src="img/svg/A.svg" alt="Logo" class="max-w-[60%]">
             </div>
             <div class=""></div>
-                <p class="name animate__animated animate__fadeInDown animate__delay-1s">ARS MEDIA</p>      
-                <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Multimedia Design Studio</p>
+                <p class="name animate__animated animate__fadeInDown animate__delay-1s">ANGELOV</p>      
+                <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Design Studio</p>
                 <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-5s" src="img/icon/arrowDown.svg" onclick="scrollToDiv('#scrollanchor')">
             </div>
         </div> 
@@ -125,12 +114,12 @@
                 </a>    
                 <div id="">
                     <a href="#services">
-                        <p class="navlink left slide-from-left delay-1 txtCyanGlow">Services</p>
+                        <p class="navlink left slide-from-left delay-1 txtCyanGlow">Skills</p>
                     </a>
                 </div>  
                 <div id="">
                     <a href="#aboutscrollanchor">
-                        <p class="navlink left slide-from-left delay-2 txtCyanGlow">About us</p>
+                        <p class="navlink left slide-from-left delay-2 txtCyanGlow">About</p>
                     </a>
                 </div>  
                 <div id="">
@@ -163,40 +152,40 @@
             </div>         
         </aside>
     </div>
-<!-- SUBLANDING PAGE --> 
+<!-- SUBLANDING PAGE 
     <section class="sublandpage" id="aboutus">
 
         <div class="flex justify-center text-center pt-2">
-            <p class="be text-5xl">We are creating a new generation<br>of artistic graphics.</p>
+            <p class="be text-5xl">Creation of an artistic graphics and design<br></p>
         </div>
 
         <div class="flex flex-col md:flex-row">
-            <!-- First div -->
+    
             <div class="w-full md:w-1/2 pt-14 pl-[10%]">
                 <img class="aboutimg animate__animated animate__fadeIn min-w-[400px]" src="dist/img/phone3.png">
             </div>
-            
-            <!-- Second div -->
-            <div class="w-full md:w-1/2 pt-14 flex justify-end">
+         
+      
+            <div class="w-full pt-14 flex justify-center">
                 <div>
-                    <p class="text-right pr-[15%] pl-4 text-xl">
+                    <p class="text-center px-[15%] py-10 text-xl">
                         At Ars media, we redefine digital design by merging cutting-edge technology with artistic excellence. 
                         Our team of visionary designers and developers 
                         crafts bespoke solutions that not only elevate your brand but also captivate and engage your audience. 
                         <br>
                         <br>We push the boundaries of what's possible, 
                         ensuring that your project stands out in the digital landscape. Let us bring your vision to life with innovation and style.
-                        <!--
+                  
                         Kombinací nejmoderněších technologií a nejvyššího grafického standartu Vám přinášíme nový způsob, kterým se zviditelnit. 
-                        Naše služby nejsou pouze funkčním produktem, ale moderním užitým uměním v éře digitálního věku. -->
+                        Naše služby nejsou pouze funkčním produktem, ale moderním užitým uměním v éře digitálního věku. 
                     </p>
                     <div class="flex justify-center pt-6">
-                        <button class="buttonWhite">Hire our team</button>
+                        <button class="buttonWhite">Hire me</button>
                     </div>
                 </div>
             </div>
         </div>
-            <!--<p class="scrollmore">Scroll for more info</p>!-->
+     <p class="scrollmore">Scroll for more info</p>
         <dic class="flex-col justify-center text-center">
             <div class="flex justify-center m-4">
                 <i class="pi pi-verified text-2xl"></i>
@@ -204,122 +193,135 @@
             <p class=" text-white be text-4xl pb-8">Transforming visions into reality with creativity and precision.</p> 
         </dic>
     </section>
+--> 
 <!-- SUBLANDING PAGE MOBILE --> 
     <section class="sublandpage-mobile" id="aboutus">  
            
     </section>
 <!-- Services -->
-<section class="bg-light-trans pb-8 relative">
-    <p class="be text-6xl text-center pt-6 text-blue">Services</p>
-    <div class="flex justify-center items-center h-16 w-16 bg-light rounded-full shadow-lg mx-auto cursor-pointer txtCyanGlow shadowCyanGlow mt-4">
+<section class="bg-dark-trans pb-8 relative">
+    <p class="be text-6xl text-center pt-6 text-light">Services</p>
+    <div class="flex justify-center items-center h-16 w-16 bg-light rounded-full shadow-lg mx-auto cursor-pointer txtCyanGlow mt-4">
         <i class="pi pi-briefcase text-blue text-2xl p-4"></i>
     </div>
     <!--BLOCK 1: Design and Graphics-->
-    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-light">
+    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-dark-blue-trans">
         <div class="lg:w-1/2 px-10 py-10 flex flex-col items-center justify-center">      
-            <h1 class="text-3xl text-blue txt2 text-center font-inria-sans">
+            <h1 class="text-3xl text-light txt2 text-center font-inria-sans">
                 Design and Graphics
             </h1>
             <div class="centerFrame">
-                <p class="py-10 text-blue">Our design and graphics services blend creativity with functionality, delivering stunning visual content that captivates and engages. From logos to full brand identities, we ensure your vision comes to life in a memorable and impactful way.</p>
+                <p class="py-10 text-light">Our design and graphics services blend creativity with functionality, delivering stunning visual content that captivates and engages. From logos to full brand identities, we ensure your vision comes to life in a memorable and impactful way.</p>
             </div>
-            <button class="buttonWhite">
-                Více
-            </button>
+            <ul>
+                <li><i class="fas fa-palette fa-lg pr-4 "></i> Branding & Logo Design</li>
+                <li><i class="fas fa-file-image fa-lg pt-4 pr-4"></i> Custom Promotion Graphics</li>
+                <li><i class="fas fa-print fa-lg pt-4 pr-4"></i> Print & Publication Design</li>
+            </ul>              
         </div>
-        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center">
+        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center divider">
             <img src="/img/services/Ars-media-graphics-service-thumbnail.jpg" alt="Thumbnail" class="w-full h-full object-cover">
         </div>
     </div>
     
     <!--BLOCK 2: Webpage and Promotion Creation-->
-    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-light">
+    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-dark-blue-trans">
         <div class="lg:w-1/2 px-10 py-10 flex flex-col items-center justify-center">      
-            <h1 class="text-3xl text-blue txt2 text-center font-inria-sans">
+            <h1 class="text-3xl text-light txt2 text-center font-inria-sans">
                 Webpage and Promotion Creation
             </h1>
             <div class="centerFrame">
-                <p class="py-10 text-blue">We craft custom websites designed to make an impact, with an emphasis on user experience and responsive design. Whether launching a new product or rebranding, our promotional materials ensure your digital presence stands out in a crowded market.</p>
+                <p class="py-10 text-light">We craft custom websites designed to make an impact, with an emphasis on user experience and responsive design. Whether launching a new product or rebranding, our promotional materials ensure your digital presence stands out in a crowded market.</p>
             </div>
-            <button class="buttonWhite">
-                Více
-            </button>
+            <ul>
+                <li><i class="fas fa-laptop-code fa-lg pr-4"></i> Web & Digital Design</li>
+                <li><i class="fas fa-bullhorn fa-lg pt-4 pr-4"></i> Webpage and Promotion Creation</li>
+                <li><i class="fas fa-desktop fa-lg pt-4 pr-4"></i> Webpage and Promotion Creation</li>
+            </ul>
         </div>
-        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center">
+        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center divider">
             <img src="/img/services/web-promo-design-service3.jpg" alt="Thumbnail" class="w-full h-full object-cover">
         </div>
     </div>
-    
-    <!--BLOCK 3: Front-end Development-->
-    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-light">
-        <div class="lg:w-1/2 px-10 py-10 flex flex-col items-center justify-center">      
-            <h1 class="text-3xl text-blue txt2 text-center font-inria-sans">
-                Front-end Development
-            </h1>
-            <div class="centerFrame">
-                <p class="py-10 text-blue">Our front-end development services focus on building fast, responsive, and visually stunning websites. By leveraging the latest technologies, we create seamless user interfaces that elevate your brand and ensure optimal performance across all devices.</p>
-            </div>
-            <button class="buttonWhite">
-                Více
-            </button>
-        </div>
-        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center">
-            <img src="/img/services/Ars-media-frontend-service-thumbnail2.jpg" alt="Thumbnail" class="w-full h-full object-cover">
-        </div>
-    </div>
-    
     <!--BLOCK 4: 3D Visualizations and Object Printing-->
-    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-light">
+    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-dark-blue-trans">
         <div class="lg:w-1/2 px-10 py-10 flex flex-col items-center justify-center">      
-            <h1 class="text-3xl text-blue txt2 text-center font-inria-sans">
+            <h1 class="text-3xl text-light txt2 text-center font-inria-sans">
                 3D Visualizations and Object Printing
             </h1>
             <div class="centerFrame">
-                <p class="py-10 text-blue">Transform your ideas into reality with our 3D visualization and printing services. From detailed architectural models to functional prototypes, we provide high-quality visualizations that bring your projects to life in immersive detail.</p>
+                <p class="py-10 text-light">Transform your ideas into reality with our 3D visualization and printing services. From detailed architectural models to functional prototypes, we provide high-quality visualizations that bring your projects to life in immersive detail.</p>
             </div>
-            <button class="buttonWhite">
-                Více
-            </button>
+            <ul>
+                <li><i class="fas fa-box fa-lg pt-4 pr-4"></i> Product Design</li>
+                <li><i class="fas fa-cube fa-lg pt-4 pr-4"></i> 3D Modeling and Visualization</li>
+                <li><i class="fas fa-print fa-lg pt-4 pr-4"></i> 3D Object Printing</li>
+            </ul>  
         </div>
-        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center">
+        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center divider">
             <img src="/img/services/Ars-media-3D-service-thumbnail.jpg" alt="Thumbnail" class="w-full h-full object-cover">
         </div>
     </div>
+    <!--BLOCK 3: Front-end Development-->
+    <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-dark-blue-trans">
+        <div class="lg:w-1/2 px-10 py-10 flex flex-col items-center justify-center">      
+            <h1 class="text-3xl text-light txt2 text-center font-inria-sans">
+                Front-end Development
+            </h1>
+            <div class="centerFrame">
+                <p class="py-10 text-light">Our front-end development services focus on building fast, responsive, and visually stunning websites. By leveraging the latest technologies, we create seamless user interfaces that elevate your brand and ensure optimal performance across all devices.</p>
+            </div>
+            <ul>
+                <li><i class="fas fa-code fa-lg pr-4"></i> Front-End Development</li>
+                <li><i class="fas fa-code fa-lg pt-4 pr-4"></i> Interactive UI Development</li>
+                <li><i class="fas fa-mobile-alt fa-lg  pt-4 pr-4"></i> Responsive Design Implementation</li>
+            </ul>
+        </div>
+        <div class="w-full h-full lg:w-1/2 bg-cover bg-no-repeat bg-center divider">
+            <img src="/img/services/Ars-media-frontend-service-thumbnail2.jpg" alt="Thumbnail" class="w-full h-full object-cover">
+        </div>
+    </div>
+    <section class="flex justify-center items-center p-14">
+        <div class="text-center">
+          <p class="text-2xl font-semibold mb-4">Let's Create Something Amazing</p>
+          <button class="buttonWhite py-2 px-6  rounded">
+            Hire me
+          </button>
+        </div>
+      </section>      
 </section>
+<section class="darkblue-fill pb-12">
 
-
-    <section class="darkblue-fill pb-12">
-
-        <p class="header2 text-white">Our methods</p>       
-        
-        <div class="appcont">
-                
-            <div class="appcard glass">
-                
-                <div class="appcont2">
-                    <img src="img/icon/light_modernity.svg" class="appimg"> 
-                    <p class="be text-2xl text-white">Modern<br>technologies</p> 
-                </div>
-                <p class="appdesc2">In our work we prioritizes a latest technologies and tools to deliver enhanced user experience in our solutions.  </p>
+    <p class="header2 text-white">Methodology</p>       
+    
+    <div class="appcont">
+            
+        <div class="appcard glass">
+            
+            <div class="appcont2">
+                <img src="img/icon/light_modernity.svg" class="appimg"> 
+                <p class="be text-2xl text-white">Modern<br>technologies</p> 
             </div>
+            <p class="appdesc2">In our work we prioritizes a latest technologies and tools to deliver enhanced user experience in our solutions.  </p>
+        </div>
 
-            <div class="appcard glass">
-                
-                <div class="appcont2">
-                    <img src="img/icon/light_artism.svg" class="appimg"> 
-                    <p class="be text-2xl text-white">Artistic<br>aesthetics</p> 
-                </div>
-                <p class="appdesc2">We focus on creating a visually captivating and imaginative unique aesthetic that stands out.  </p>
+        <div class="appcard glass">
+            
+            <div class="appcont2">
+                <img src="img/icon/light_artism.svg" class="appimg"> 
+                <p class="be text-2xl text-white">Artistic<br>aesthetics</p> 
             </div>
+            <p class="appdesc2">We focus on creating a visually captivating and imaginative unique aesthetic that stands out.  </p>
+        </div>
 
-            <div class="appcard glass">
-                <div class="appcont2">
-                    <img src="img/icon/user-02.svg" class="appimg"> 
-                    <p class="be text-2xl text-white">Individual<br>Approach</p> 
-                </div>
-                <p class="appdesc2">We create custom solutions designed to meet your specific project or company needs and drive attention.</p>
+        <div class="appcard glass">
+            <div class="appcont2">
+                <img src="img/icon/user-02.svg" class="appimg"> 
+                <p class="be text-2xl text-white">Individual<br>Approach</p> 
             </div>
-    </section> 
+            <p class="appdesc2">We create custom solutions designed to meet your specific project or company needs and drive attention.</p>
+        </div>
+</section> 
 
 <!--Gallery References-->
     <section class="relative darkBlue flex px-[5%] pb-12">
@@ -418,27 +420,27 @@
 </script>
 
 
-    <section class="relative white">
+    <section class="relative darkblue-fill">
         <div class="flex flex-wrap justify-center gap-6 pb-14">
             <div class="w-full text-center mb-6 pt-6">
-                <p class="header2 text-blue">Technologies we master</p>
+                <p class="header2 text-light">Mastered technologies</p>
             </div>
         
             <!-- First section: Graphic and 3D software -->
-            <div class="p-4 flex flex-col items-center w-auto bg-light shadow-xl">
-                <p class="font-bold mb-4 text-blue">Graphic and 3D software</p>
+            <div class="p-4 flex flex-col items-center w-auto bg-dark shadow-xl outline1px">
+                <p class="font-bold mb-4 text-light">Graphic and 3D software</p>
                 <div class="flex gap-4 justify-center">
                     <div class="flex flex-col items-center">
                         <img src="img/technologies/icons8-adobe.svg" alt="Adobe" class="max-w-[50px]">
-                        <p class="text-blue">Adobe</p>
+                        <p class="text-light">Adobe</p>
                     </div>
                     <div class="flex flex-col items-center">
                         <img src="img/technologies/icons8-blender-3d-120.svg" alt="Blender" class="max-w-[50px]">
-                        <p class="text-blue">Blender 3D</p>
+                        <p class="text-light">Blender 3D</p>
                     </div>
                     <div class="flex flex-col items-center">
                         <img src="img/technologies/icons8-figma.svg" alt="Figma" class="max-w-[50px]">
-                        <p class="text-blue">Figma</p>
+                        <p class="text-light">Figma</p>
                     </div>
                 </div>
             </div>
@@ -527,7 +529,7 @@
 
     
 
-    <section class="darkblue-fill">
+    <section class="darkblue-fill2">
         <div class="w-full text-center mb-6 pt-6">
             <p class="header2 text-white">About us</p>
         </div>

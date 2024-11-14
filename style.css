@@ -70,15 +70,7 @@
     background-color: #110b25d8;
 }
 
-    
 
-'light': '#F8F3FF', 
-'shade': '#2325348C', 
-'dark' : '#17171e',
-'light-trans' : '#f8f3ffef',
-'dark-trans' : '#110b25d8',
-'dark-blue-trans': '#060408c2',
-'dark-blue': '#0c0c13',
 
 .aquire{
     font-family: aquire;
@@ -139,7 +131,11 @@
     }
 
 }
+.divider{
+    border-left: 1px solid white;
+    
 
+}
 /*headers*/
 .header1{
     font-size: 2vw;
@@ -255,6 +251,9 @@
     margin-right: 25%;
     width: 100%;   
 
+}
+.outline1px{
+    outline: solid white 1px;
 }
 
 /*gradienttext*/
@@ -1141,6 +1140,17 @@ body {
 
 /*SECTION3*/
 .darkblue-fill{
+    position: relative;
+    color: #03010c;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background: linear-gradient(to top,  #110b25d8, #060408c2);
+    padding-bottom: 20px;
+    outline: top solid 1px white;   
+}
+.darkblue-fill2{
     position: relative;
     color: #03010c;
     background-position: center;
