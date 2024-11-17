@@ -108,7 +108,7 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -554,36 +554,12 @@ video {
   display: none;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
 .z-10 {
   z-index: 10;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .m-4 {
@@ -628,6 +604,10 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -646,10 +626,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-16 {
@@ -698,10 +674,6 @@ video {
 
 .max-w-\[800px\] {
   max-width: 800px;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .max-w-md {
@@ -758,28 +730,27 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
 }
 
 .border-gray-300 {
   --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .bg-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(35 37 52 / var(--tw-bg-opacity));
+  background-color: rgb(35 37 52 / var(--tw-bg-opacity, 1));
 }
 
 .bg-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(23 23 30 / var(--tw-bg-opacity));
+  background-color: rgb(23 23 30 / var(--tw-bg-opacity, 1));
 }
 
 .bg-dark-blue-trans {
@@ -788,15 +759,6 @@ video {
 
 .bg-dark-trans {
   background-color: #000000c2;
-}
-
-.bg-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 243 255 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-75 {
-  --tw-bg-opacity: 0.75;
 }
 
 .bg-cover {
@@ -822,10 +784,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-10 {
@@ -877,6 +835,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -907,6 +869,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -965,19 +931,14 @@ video {
   font-weight: 600;
 }
 
-.text-blue {
-  --tw-text-opacity: 1;
-  color: rgb(35 37 52 / var(--tw-text-opacity));
-}
-
 .text-light {
   --tw-text-opacity: 1;
-  color: rgb(248 243 255 / var(--tw-text-opacity));
+  color: rgb(248 243 255 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -1187,6 +1148,7 @@ input:focus, textarea:focus {
   font-family: be;
   text-align: center;
   padding: 40px;
+  padding-top: 60px;
 }
 
 .header2b{
@@ -1491,7 +1453,7 @@ body {
 #navWrapTop {
   position: absolute;
   top: 0px;
-  height: 70px;
+  height: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
@@ -1507,7 +1469,7 @@ body {
 .mainnav {
   position: relative;
   top: -100px;
-  height: 75px;
+  height: 65px;
   width: 100%;
   z-index: 999999;
   text-align: center;
@@ -1652,14 +1614,13 @@ body {
 
 .navlink{
   position: relative;
-  bottom: 10px;
+  bottom: 3px;
   font-size: 1.7rem;
   font-family: be;
   box-shadow: inset 0 0 0 0 #ffffff;
   transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
-  padding: 8px 40px;
+  padding: 5px 40px;
   color: #ffffff;
-  box-shadow: inset 0 0 0 0 #9c083a9f;
   transition: ease-out 0.4s;
 }
 
@@ -1987,7 +1948,7 @@ body {
 }
 
 .designer{
-  font-size: 1.65vw;
+  font-size: 2vw;
   font-family: be;
   text-align: right;
 }
@@ -2346,6 +2307,15 @@ body {
   outline: top solid 1px white;
 }
 
+.darkblue-fill-horizont {
+  background: linear-gradient(
+        to right, 
+        rgba(17, 11, 37, 0) 0%, 
+        rgba(17, 11, 37, 0.85) 50%, 
+        rgba(17, 11, 37, 0) 100%
+    );
+}
+
 .appcont{
   display: flex;
   flex-direction: row;
@@ -2685,7 +2655,6 @@ body {
   font-size: 15px;
   padding-bottom: 50px;
   color: #ffffff;
-  background-color: #000000c2;
 }
 
 .contact p {
@@ -2921,256 +2890,6 @@ body {
   }
 }
 
-/*FULLSCREEN PICTURES Gallery*/
-
-#fullpage {
-  display: block;
-  position: absolute;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-size: contain;
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
-  background-color: black;
-  transition: .5s all linear;
-  opacity: 1;
-}
-
-/* The Modal (background) */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Add Animation - Zoom in the Modal */
-
-.modal-content{
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 90%;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-  margin-bottom: 20px;
-}
-
-/* The Close Button */
-
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-  .close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-
-.prev,
-  .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-  .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Caption text */
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-  font-family: be;
-  font-size: 3rem;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-  .demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-    height: auto;
-  }
-
-  .modal-contentvideo {
-    width: 100%;
-    height: auto;
-  }
-
-  .projectvideo{
-    width: 100%;
-    height: auto;
-  }
-
-  .modal-head{
-    font-size: 2rem;
-  }
-}
-
-@keyframes zoom {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* The Close Button */
-
-.close {
-  position: absolute;
-  top: 65px;
-  right: 10px;
-  color: #f1f1f1;
-  font-size: 50px;
-  font-weight: bold;
-  transition: 0.3s;
-  padding: 10px;
-  padding-bottom: 0px;
-}
-
-.close:hover,
-.close:focus {
-  color: rgb(221, 92, 92);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-
-.prev {
-  cursor: pointer;
-  position: absolute;
-  left: 0;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 45px;
-  border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  transition: 0.5s;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-  border-radius: 3px 0 0 3px;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 45px;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  transition: 0.5s;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-.close:hover,
-.prev:hover,
-.next:hover {
-  background-color: rgba(82, 82, 82, 0.452);
-}
-
-.bluebot-asset-projects{
-  position: relative;
-  rotate: 180deg;
-  bottom: 100px;
-}
-
 /*footermenu*/
 
 .footermenu{
@@ -3263,14 +2982,14 @@ img.hover-shadow {
 /*FOOTER*/
 
 .footer{
-  bottom: 0;
+  bottom: 10px;
   text-align: center;
   font-size: 13px;
   position: relative;
   width: 100%;
-  background-color: #04010e;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  background-color: #04010e;
 }
 
 .footer2{
@@ -3563,6 +3282,7 @@ canvas {
   text-align: center;
   justify-content: center;
   padding: 7px 28px;
+  padding-bottom: 10px;
   font-family: be;
   font-size: 1.5rem;
   color: #0e0e0e;
@@ -3578,6 +3298,7 @@ canvas {
   box-shadow: 0 0 10px rgba(246, 254, 255, 0.884);
   background-color: #060814;
   color: #ffffff;
+  outline:1px solid rgba(255, 255, 255, 0.493);
 }
 
 .buttonWhite2 {
@@ -3600,7 +3321,7 @@ canvas {
 }
 
 .txtCyanGlow:hover {
-  text-shadow: 0 0 15px rgba(246, 254, 255, 0.884);
+  text-shadow: 0 0 5px rgba(246, 254, 255, 0.884);
   transition: text-shadow 0.5s ease;
 }
 
@@ -3619,7 +3340,7 @@ canvas {
 }
 
 .svg-glow:hover {
-  filter: drop-shadow(0 0 5px rgba(246, 254, 255, 0.884));
+  filter: drop-shadow(0 0 6px rgba(246, 254, 255, 0.884));
   transition: filter 0.5s ease;
 }
 
@@ -3676,13 +3397,108 @@ canvas {
   /* Ensure content stays within the rhombus */
 }
 
+/* Reference card styles */
+
+.reference-card {
+  cursor: pointer;
+  text-align: center;
+  margin: 20px;
+}
+
+.reference-image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.reference-title {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Modal styles */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 5, 15, 0.822);
+  /* Semi-transparent black background */
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When the modal is active, show it */
+
+.modal.show {
+  display: flex;
+}
+
+/* Modal content styles */
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  max-width: 70%;
+  height: auto;
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+/* Close button styles */
+
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 10px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+
+.referenceImg{
+}
+
+/* Initial styles */
+
+.hooverOutline {
+  border: 1px solid rgba(255, 255, 255, 0.144);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+
+.hooverOutline:hover {
+  border-color: rgba(255, 255, 255, 1);
+  /* Fully opaque border on hover */
+  transform: scale(1.05);
+  /* Slight scaling for emphasis */
+}
+
 .hover\:bg-opacity-80:hover {
   --tw-bg-opacity: 0.8;
 }
 
 .focus\:border-light:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(248 243 255 / var(--tw-border-opacity));
+  border-color: rgb(248 243 255 / var(--tw-border-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -3698,7 +3514,7 @@ canvas {
 
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1));
 }
 
 @media (min-width: 640px) {

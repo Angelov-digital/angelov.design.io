@@ -92,13 +92,13 @@
 
     <div class="background3d"></div>
     <section class="main-container">       
-        <div class="namewrapper">
+        <div class="namewrapper mt-10">
             <div class="flex justify-center items-center">
                 <img src="img/svg/A.svg" alt="Logo" class="max-w-[60%]">
             </div>
             <div class=""></div>
                 <p class="name animate__animated animate__fadeInDown animate__delay-1s">ANGELOV</p>      
-                <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Design Studio</p>
+                <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Art Design Studio</p>
                 <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-5s" src="img/icon/arrowDown.svg" onclick="scrollToDiv('#scrollanchor')">
             </div>
         </div> 
@@ -107,10 +107,10 @@
     <div class="lespacer"></div>
 <!-- NAVIGATION --> 
     <div id="navWrap">     
-        <nav class="mainnav pt-4">
+        <nav class="mainnav pt-2 pb-2">
             <div id="navframe">
                 <a class="cta2 hide" href="index.html" id="logo">
-                    <img class="logo" src="img/svg/LogoWhite.svg">
+                    <img class="logo svg-glow" src="img/svg/LogoWhite.svg">
                 </a>    
                 <div id="">
                     <a href="#services">
@@ -118,17 +118,17 @@
                     </a>
                 </div>  
                 <div id="">
-                    <a href="#aboutscrollanchor">
+                    <a href="#about">
                         <p class="navlink left slide-from-left delay-2 txtCyanGlow">About</p>
                     </a>
                 </div>  
                 <div id="">
-                    <a href="#work-projects">
+                    <a href="#projects">
                         <p class="navlink left slide-from-left delay-3 txtCyanGlow">Gallery</p>
                     </a>
                 </div>               
                 <div id="">
-                    <a href="hireus.html">
+                    <a href="#contact">
                         <p class="navlink left slide-from-left delay-4 txtCyanGlow">Contact</p>
                     </a>
                 </div>               
@@ -199,10 +199,10 @@
            
     </section>
 <!-- Services -->
-<section class="bg-dark-trans pb-8 relative">
+<section class="bg-dark-trans pb-8 relative" id="services">
     <p class="be text-6xl text-center pt-6 text-light">Services</p>
-    <div class="flex justify-center items-center h-16 w-16 bg-light rounded-full shadow-lg mx-auto cursor-pointer txtCyanGlow mt-4">
-        <i class="pi pi-briefcase text-blue text-2xl p-4"></i>
+    <div class="flex justify-center items-center h-16 w-16 bg-dark rounded-full shadow-lg mx-auto cursor-pointer txtCyanGlow mt-4">
+        <i class="pi pi-briefcase text-light text-2xl p-4"></i>
     </div>
     <!--BLOCK 1: Design and Graphics-->
     <div class="animate__animated animate__fadeInLeft ml-[10%] mr-[10%] shadow-xl mt-6 flex flex-col lg:flex-row lg:even:flex-row-reverse bg-dark-blue-trans">
@@ -278,7 +278,7 @@
                     </p>
             </div>
             <ul>
-                <li><i class="fas fa-code fa-lg pr-4"></i> Front-End Development</li>
+                <li><i class="fas fa-code fa-lg pr-4"></i> App and Web Front-End</li>
                 <li><i class="fas fa-code fa-lg pt-4 pr-4"></i>Existing Website Enhancement</li>
                 <li><i class="fas fa-mobile-alt fa-lg  pt-4 pr-4"></i> Responsive Design Implementation</li>
             </ul>
@@ -290,10 +290,13 @@
     </div>
     <section class="flex justify-center items-center p-14">
         <div class="text-center">
-          <p class="text-2xl font-semibold mb-4">Let's Create Something Amazing</p>
-          <button class="buttonWhite py-2 px-6 mt-4  rounded">
-            Hire us
-          </button>
+            <p class="text-2xl font-semibold mb-4">Let's Create Something Amazing</p>
+        
+            <a href="#form" class="buttonWhite py-2 px-6 mt-4 rounded block text-center">
+                Hire us
+            </a>
+            
+          
         </div>
     </section> 
     <hr class="underline"></hr>    
@@ -326,111 +329,143 @@
             <p class="appdesc2">We create custom solutions designed to meet your specific project or company needs and drive attention.</p>
         </div>
 </section> 
-<!--Gallery References-->
-    <section class="relative darkBlue flex px-[5%] pb-12">
-        <div class="mx-auto px-4">
-            <h2 class="header2 mb-8">Gallery</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Reference 1 -->
-                <div class="relative cursor-pointer shadow-md p-4 " onclick="openModal('modal1')">
-                    <img src="img/reference/reference1.JPG" alt="Reference 1" class="w-full h-64 object-cover">
-                    <p class="text-center text-white mt-4">4Motion visual redesign</p>
-                </div>
-                <!-- Reference 2 -->
-                <div class="relative cursor-pointer shadow-md p-4 " onclick="openModal('modal2')">
-                    <img src="img/reference/reference2.JPG" alt="Reference 2" class="w-full h-64 object-cover">
-                    <p class="text-center text-white mt-4">Edu institut website</p>
-                </div>
-                <!-- Reference 3 -->
-                <div class="relative cursor-pointer shadow-md p-4 " onclick="openModal('modal3')">
-                    <img src="img/arch/rerender3 2023-2.png" alt="Reference 3" class="w-full h-64 object-cover">
-                    <p class="text-center text-white mt-4">Loxia - Architectiral 3D model</p>
-                </div>
-                <!-- Reference 4 -->
-                <div class="relative cursor-pointer shadow-md p-4 " onclick="openModal('modal4')">
-                    <img src="img/design/future/future-vodka.jpg" alt="Reference 4" class="w-full h-64 object-cover">
-                    <p class="text-center text-white mt-4">Future vodka - product design</p>
-                </div>
-                <!-- Reference 5 -->
-                <div class="relative cursor-pointer shadow-md p-4 " onclick="openModal('modal5')">
-                    <img src="img/Graphics/giftcardviuf.jpg" alt="Reference 5" class="w-full h-64 object-cover">
-                    <p class="text-center text-white mt-4">Viuf Art - visual identity</p>
-                </div>
-                <!-- Reference 6 -->
-                <div class="relative cursor-pointer shadow-md p-4 " onclick="openModal('modal6')">
-                    <img src="img/3D/1_VTOL drone HD composition-3.png" alt="Reference 6" class="w-full h-64 object-cover">
-                    <p class="text-center text-white mt-4">3D drone concept</p>
-                </div>
+<!-- Gallery References -->
+<section class="relative darkBlue flex px-[5%] pb-12" id="projects">
+    <div class="mx-auto px-4">
+        <h2 class="header2 mb-8">Projects Gallery</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Reference 1 -->
+            <div class="referenceImg hooverOutline relative cursor-pointer shadow-md p-4" onclick="openModal('modal1')">
+                <img src="img/reference/reference1.JPG" alt="Reference 1" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">4Motion - brand and website visual redesign</p>
+            </div>
+            <!-- Reference 2 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal2')">
+                <img src="img/reference/Laboratorijum detajl 2 moded dark tyrqouise2.png" alt="Reference 2" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">Laboratorium - game environment design</p>
+            </div>
+            <!-- Reference 3 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal3')">
+                <img src="img/arch/rerender3 2023-2.png" alt="Reference 3" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">Loxia - Architectural 3D model</p>
+            </div>
+            <!-- Reference 4 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal4')">
+                <img src="img/design/future/future-vodka.jpg" alt="Reference 4" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">Future Vodka - product design & commercials</p>
+            </div>
+            <!-- Reference 5 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal5')">
+                <img src="img/Graphics/giftcardviuf.jpg" alt="Reference 5" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">Viuf Art gallery - visual identity</p>
+            </div>
+            <!-- Reference 6 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal6')">
+                <img src="img/3D/1_VTOL drone HD composition-3.png" alt="Reference 6" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">Drone design concept</p>
+            </div>
+            <!-- Reference 7 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal7')">
+                <img src="img/reference/svunk.png" alt="Reference 7" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">SVUNK - brand design</p>
+            </div>
+            <!-- Reference 8 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal8')">
+                <img src="img/reference/sokolovna.JPG" alt="Reference 8" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">Vinohradská sokolovna - 3D printed model</p>
+            </div>
+            <!-- Reference 9 -->
+            <div class="relative hooverOutline cursor-pointer shadow-md p-4" onclick="openModal('modal9')">
+                <img src="img/reference/ONYX corpo identity.png" alt="Reference 9" class="w-full h-64 object-cover">
+                <p class="text-center text-white mt-4">ONYX - brand visual identity</p>
             </div>
         </div>
-    </section>
-<!-- Modal Structure -->
-    <div id="modal1" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-75" onclick="closeModal('modal1')">
-        <div class="relative">
-            <img src="img/reference/reference1.JPG" alt="Reference 1" class="max-w-full h-auto">
-            <span class="absolute top-2 right-2 text-white text-3xl cursor-pointer" onclick="closeModal('modal1')">&times;</span>
-        </div>
     </div>
-
-    <div id="modal2" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-75" onclick="closeModal('modal2')">
-        <div class="relative">
-            <img src="" alt="Reference 2" class="max-w-full h-auto">
-            <span class="absolute top-2 right-2 text-white text-3xl cursor-pointer" onclick="closeModal('modal2')">&times;</span>
-        </div>
+</section>
+<!-- Modal Structures -->
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <img src="img/reference/reference1.JPG" alt="Reference 1">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal1')">&times;</span>
     </div>
+</div>
 
-    <div id="modal3" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-75" onclick="closeModal('modal3')">
-        <div class="relative">
-            <img src="" alt="Reference 3" class="max-w-full h-auto">
-            <span class="absolute top-2 right-2 text-white text-3xl cursor-pointer" onclick="closeModal('modal3')">&times;</span>
-        </div>
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <img src="img/reference/Laboratorijum detajl 2 moded dark tyrqouise2.png" alt="Reference 2">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal2')">&times;</span>
     </div>
+</div>
 
-    <div id="modal4" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-75" onclick="closeModal('modal4')">
-        <div class="relative">
-            <img src="" alt="Reference 4" class="max-w-full h-auto">
-            <span class="absolute top-2 right-2 text-white text-3xl cursor-pointer" onclick="closeModal('modal4')">&times;</span>
-        </div>
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <img src="img/arch/rerender3 2023-2.png" alt="Reference 3">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal3')">&times;</span>
     </div>
+</div>
 
-    <div id="modal5" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-75" onclick="closeModal('modal5')">
-        <div class="relative">
-            <img src="" alt="Reference 5" class="max-w-full h-auto">
-            <span class="absolute top-2 right-2 text-white text-3xl cursor-pointer" onclick="closeModal('modal5')">&times;</span>
-        </div>
+<!-- Modal 4 -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <img src="img/design/future/future-vodka.jpg" alt="Reference 4">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal4')">&times;</span>
     </div>
+</div>
 
-    <div id="modal6" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-75" onclick="closeModal('modal6')">
-        <div class="relative">
-            <img src="" alt="Reference 6" class="max-w-full h-auto">
-            <span class="absolute top-2 right-2 text-white text-3xl cursor-pointer" onclick="closeModal('modal6')">&times;</span>
-        </div>
+<!-- Modal 5 -->
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <img src="img/Graphics/giftcardviuf.jpg" alt="Reference 5">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal5')">&times;</span>
     </div>
+</div>
 
-<!-- Modal JavaScript -->
-<script>
-    function openModal(modalId) {
-        document.getElementById(modalId).classList.remove('hidden');
-    }
+<!-- Modal 6 -->
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <img src="img/3D/1_VTOL drone HD composition-3.png" alt="Reference 6">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal6')">&times;</span>
+    </div>
+</div>
 
-    function closeModal(modalId) {
-        document.getElementById(modalId).classList.add('hidden');
-    }
-</script>
+<!-- Modal 7 -->
+<div id="modal7" class="modal">
+    <div class="modal-content">
+        <img src="img/reference/svunk.png" alt="Reference 7">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal7')">&times;</span>
+    </div>
+</div>
 
+<!-- Modal 8 -->
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <img src="img/reference/sokolovna.JPG" alt="Reference 8">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal8')">&times;</span>
+    </div>
+</div>
+
+<!-- Modal 9 -->
+<div id="modal9" class="modal">
+    <div class="modal-content">
+        <img src="img/reference/ONYX corpo identity.png" alt="Reference 9">
+        <span class="modal-close hooverOutline" onclick="closeModal('modal9')">&times;</span>
+    </div>
+</div>
 
     <section class="relative darkblue-fill">
         <div class="flex flex-wrap justify-center gap-6">
-            <div class="w-full text-center pt-6">
+            <div class="w-full text-center">
                 <p class="header2 text-light">Mastered technologies</p>
             </div>
             <div class="w-full flex justify-center pb-6">
                 <div class="max-w-[800px] pb-6 text-center">
                     <p class="text-light text-lg">Studio Angelov combines advanced software and creative tools to bring designs to life across digital and physical media. From graphic design to 3D modeling and large-scale printing, we deliver tailored solutions with precision and innovation.</p>
                 </div>
-            </div>
-            
-        
+            </div>        
             <!-- First section: Graphic design -->
             <div class="p-4 flex flex-col items-center w-auto bg-dark shadow-xl outline1px">
                 <p class="font-bold mb-4 text-light">Graphic design</p>
@@ -449,7 +484,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Second section: Web development -->
             <div class="p-4 flex flex-col items-center w-auto bg-dark shadow-xl outline1px">
                 <p class="font-bold mb-4 text-light">Web development</p>
@@ -468,7 +502,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Third section: Front-end frameworks -->
             <div class="p-4 flex flex-col items-center w-auto bg-dark shadow-xl outline1px">
                 <p class="font-bold mb-4 text-light">Front-end frameworks</p>
@@ -487,7 +520,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Fourth section: Printed physical media -->
             <div class="p-4 flex flex-col items-center w-auto bg-dark shadow-xl outline1px">
                 <p class="font-bold mb-4 text-light">Printed physical media</p>
@@ -506,7 +538,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Fifth section: 3D software -->
             <div class="p-4 flex flex-col items-center w-auto bg-dark shadow-xl outline1px">
                 <p class="font-bold mb-4 text-light">3D software</p>
@@ -525,8 +556,6 @@
                     </div>
                 </div>
             </div>
-
-
             <!-- sixth section: CAD software and 3D print 
             <div class="p-4 flex flex-col items-center w-auto bg-dark shadow-xl outline1px">
                 <p class="font-bold mb-4 text-light">3D graphics</p>
@@ -548,26 +577,31 @@
             -->
         </div>
     </section>
-    <section class="darkblue-fill2">
+    <section class="darkblue-fill2" id="about">
         <div class="w-full text-center mb-6 pt-6">
             <hr class="underline"></hr>    
 
-            <p class="header2 text-white">About us</p>
+            <p class="header2 text-white">About the studio</p>
         </div>
         <div class="max-w-[800px] px-8 mx-auto text-center flex items-center justify-center">
             <p class="py-auto text-lg text-white">
-                At Ars Media, we are a multimedia design studio focused on delivering artistic and digital solutions. 
-                Located in Prague offering services for europen clients, our studio 
-                is dedicated to creating high-quality, personalized projects.<br><br>
-                From website and graphic development to printed media and 3D printing, we offer a wide range of services 
-                tailored to meet the needs of both individuals and companies. We also specialize in visualizations and custom creative solutions, 
-                helping you bring your ideas to life in a way that reflects your unique vision. <br><br>
-                At Ars Media, our mission is to combine 
-                creativity and technology to deliver exceptional results for every project.
+                Angelov Art Design studio was founded in Prague by Adam Angelov with vision to bring artistic values and aesthetics into commercial graphics and product design.                
+                Offering services for international clients, our studio 
+                is dedicated to creating high-quality, personalized solutions.<br><br>
+                From website and graphic development to design concepts and printed media, we offer a wide range of services 
+                tailored to meet the needs of both individuals and companies with creative projects. We also specialize in visualizations and custom creative solutions, 
+                helping you bring ideas to life.<br><br>
+                At Angelov-Design, our mission is to combine 
+                artistic vision with technology to deliver exceptional results for every project.
             </p>
         </div>
+             
+        <div class="max-w-[800px] mx-auto p-4 pt-8">
+            <img src="img/png-uncompressed/graphicworkflowblue.jpg" alt="" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+         
     </section>
-    <section class="bg-dark-blue-trans pb-8 relative z-10">
+    <section class="darkblue-fill pb-8 relative z-10" id="form">
         <div class="">
             <div class="w-full text-center mb-2 pt-2">
                 <hr class="underline"></hr>    
@@ -576,12 +610,13 @@
                     Write us
                 </p>
             </div>
+            <!--
             <div class="flex justify-center items-center">
                 <i class="pi pi-envelope text-light text-2xl"></i>
             </div>
-
-            <div class="form mx-[10%] mt-1">
-                <form class="max-w-md mx-auto p-6 space-y-4">
+            -->
+            <div class="form mx-[10%]">
+                <form class="max-w-md mx-auto pb-6 space-y-4">
                     <!-- Name Input -->
                     <div>
                         <label for="name" class="font-inria-sans block text-sm font-medium text-light">Your Name</label>
@@ -626,13 +661,13 @@
             
                     <!-- Message Textarea -->
                     <div>
-                        <label for="message" class="font-inria-sans block text-sm font-medium text-light">Your Message</label>
+                        <label for="message" class="font-inria-sans block text-sm font-medium text-light">Your Message</label>          
                         <textarea 
                             id="message" 
                             name="message" 
                             rows="4" 
                             class="shadowCyanGlow font-inria-sans mt-1 block w-full px-3 py-2 bg-dark border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-white focus:border-light">
-                        </textarea>
+                        </textarea>             
                     </div>
             
                     <!-- Submit Button -->
@@ -654,7 +689,7 @@
         <hr class="underline"></hr>   
     </section>  
 
-    <section class="contact" id="contactscroll">
+    <section class="contact darkblue-fill2" id="contact">
         <p class="header2">Contact</p>
         <div class="contwrap">
             
