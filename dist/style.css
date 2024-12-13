@@ -562,10 +562,6 @@ video {
   z-index: 10;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .mx-\[10\%\] {
   margin-left: 10%;
   margin-right: 10%;
@@ -658,10 +654,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.min-w-\[400px\] {
-  min-width: 400px;
 }
 
 .max-w-\[50px\] {
@@ -811,11 +803,6 @@ video {
   padding-right: 2rem;
 }
 
-.px-\[15\%\] {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .px-\[5\%\] {
   padding-left: 5%;
   padding-right: 5%;
@@ -847,16 +834,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.pl-\[10\%\] {
-  padding-left: 10%;
-}
-
 .pr-4 {
   padding-right: 1rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .pt-2 {
@@ -887,16 +866,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-6xl {
@@ -1119,6 +1088,14 @@ video {
 
 .divider{
   border-left: 1px solid white;
+}
+
+/* Hide on mobile */
+
+@media (max-width: 767px) {
+  .divider-horizont {
+    display: none;
+  }
 }
 
 input:focus, textarea:focus {
@@ -3420,16 +3397,6 @@ canvas {
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 }
 
