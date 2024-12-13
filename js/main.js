@@ -124,3 +124,11 @@ function closeModal(modalId) {
   }
 }
 
+document.querySelectorAll('#menu li a').forEach(link => {
+  link.addEventListener('click', () => {
+      const toggleInput = document.getElementById('toggle');
+      setTimeout(() => {
+          toggleInput.checked = false;
+      }, 300);
+  });
+});

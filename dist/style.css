@@ -108,7 +108,7 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1485,112 +1485,111 @@ body {
   justify-items: center;
 }
 
-#navmobile{
+/* Mobile Navigation Container */
+
+#navmobile {
   display: none;
   width: 100%;
   height: 70px;
-  z-index: 999999;
   background-color: #04010e;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
-/*Mobile nav styling*/
+/* Burger Menu Container */
 
 #menuToggle {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 25px;
-  left: 25px;
-  z-index: 1;
   -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
-#menuToggle input
-  {
-  display: flex;
-  width: 40px;
-  height: 32px;
-  position: absolute;
+/* Hide Input Checkbox */
+
+#menuToggle input {
+  display: none;
+}
+
+/* Burger Icon */
+
+.burger-icon svg {
   cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-}
-
-#menuToggle span
-  {
-  display: flex;
-  width: 29px;
-  height: 2px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #ffffff;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 5px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-  {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-  {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-  {
+  transition: opacity 0.3s ease;
   opacity: 1;
-  transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383F;
+  position: relative;
+  left: 10px;
+  top: 10px;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-  {
+/* Close Icon */
+
+#close-icon {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s ease;
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-  {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu
-  {
   position: absolute;
-  width: 180px;
-  height: 400px;
-  box-shadow: 0 0 10px #020203;
-  margin: -50px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #e4ddfc;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  left: 10px;
+  top: 10px;
 }
 
-#menu p{
-  margin-top: 30px;
-  font-family: spartansemi;
-  font-size: 1.2rem;
-  transition-delay: 2s;
-  color: #020203;
+/* Toggle Behavior */
+
+#menuToggle input:checked ~ .burger-icon #burger {
+  opacity: 0;
+  pointer-events: none;
 }
 
-#menuToggle input:checked ~ ul
-  {
-  transform: none;
+#menuToggle input:checked ~ .burger-icon #close-icon {
+  display: block;
+  opacity: 1;
+}
+
+/* Mobile Menu */
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(31, 29, 36, 0.97);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+#menuToggle input:checked ~ #menu {
+  transform: translateX(0);
+}
+
+/* Menu Items */
+
+#menu li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+#menu li a {
+  text-decoration: none;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+#menu li a:hover {
+  color: #b6003d;
 }
 
 /*main nav style*/
@@ -1879,7 +1878,7 @@ body {
 
 .background3d{
   position: fixed;
-  background-image: url("img/plasma.jpg");
+  background-color: #101022;
   width: 100%;
   max-width: 100%;
   height: 100vh;
@@ -1995,129 +1994,30 @@ body {
   }
 }
 
-/*Ourscope section*/
+/*Video sec1/*
+/* Hide the video background by default */
 
-.ourscope{
-  position: relative;
-  top: -77px;
-  width: 100%;
-  background-image: url(img/plasmamorph.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.mobile-video-bg {
+  display: none;
 }
 
-.scopecont{
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  justify-content: center;
-  /* align items horizontally to center */
-  align-items: center;
-  /* align items vertically to center */
-  margin: auto;
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
 }
 
-.scopeiccont{
-  margin: 20px;
-  width: 200px;
-  text-align: center;
-  background-color: #0a051ae3;
-  border-radius: 15px;
-  cursor: pointer;
-  outline: solid 1px #e4ddfc;
-}
+/* Display the video background on mobile devices */
 
-.scopeiccont:hover{
-  animation: pulse 1s;
-}
-
-.scopetxtcont{
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  padding: 50px;
-  padding-top: 20px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.blueback{
-  padding-top: 0px;
-  padding-bottom: 50px;
-  margin: auto;
-  width: 100%;
-  background: linear-gradient(to bottom, #09091b42, #09091bea);
-}
-
-.scopedesc{
-  text-align: center;
-  opacity: 0.75;
-  transition: visibility 0s, opacity 0.4s linear;
-  padding-bottom: 20px;
-  padding: 15px;
-  font-family: spartansemi;
-}
-
-.service-img:hover + .scopedesc{
-  opacity: 100;
-  /* Show when hovering over sibling element */
-}
-
-.readmorewrap{
-  position: relative;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: right;
-}
-
-@media only screen and (max-width: 700px) {
-  .scopetxtcont{
-    padding: 0px;
-    width: 70%;
-  }
-
-  .scopedesc{
-    opacity: 1;
-  }
-
-  .scopeiccont{
-    margin: 0px;
-    width: 150px;
-    text-align: center;
-    background-color: #0a051a;
-    border-radius: 0px;
-    outline: none;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .scopelink{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .readmorewrap{
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 450px){
-  .scopecont{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .scopeiccont{
-    border-radius: 15px;
-    outline: solid 1px #e4ddfc;
-  }
-
-  .scopelink{
-    margin-top:20px ;
+@media screen and (max-width: 768px) {
+  .mobile-video-bg {
+    display: block;
+    position: relative;
   }
 }
 

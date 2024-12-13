@@ -64,31 +64,45 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
 
 <body>
-     <!-- MOBILE AVIGATION --> 
-     <div id="navmobile">
-        <div id="menuToggle">
-            <input type="checkbox"/>
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="#services">
-                    <p class="">Skills</p>
-                </a>
-                <a href="#aboutscrollanchor">
-                    <p class="">About me</p>
-                </a>
-                <a href="#work-projects">
-                    <p class="">Gallery</p>
-                </a>
-                <a href="hireus.html">
-                    <p class="">Contact</p>
-                </a>
-            </ul>
-        </div>
-    </div>  
+<!-- MOBILE NAVIGATION --> 
+<div id="navmobile">
+    <div id="menuToggle">
+        <!-- Hidden Checkbox to Control Menu State -->
+        <input type="checkbox" id="toggle" />
+
+        <!-- Menu Toggle Label -->
+        <label for="toggle" class="burger-icon">
+            <!-- Burger Icon -->
+            <svg id="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="30" height="30">
+                <rect width="100" height="10" fill="#ffffff"></rect>
+                <rect y="30" width="100" height="10" fill="#ffffff"></rect>
+                <rect y="60" width="100" height="10" fill="#ffffff"></rect>
+            </svg>
+
+            <!-- Close Icon -->
+            <img id="close-icon" src="img/svg/circle-xmark-regular.svg" alt="Close Menu" />
+        </label>
+
+        <!-- Mobile Menu -->
+        <ul id="menu">
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
 <!-- MAIN --> 
     <spline-viewer class="splineCanvas" url="https://prod.spline.design/wj0xvs85KetwbdYh/scene.splinecode"></spline-viewer>
+
+    <div class="mobile-video-bg">
+        <video autoplay loop muted class="video">
+          <source src="vid/video hero 1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+    </div>
+      
 
     <div class="background3d"></div>
     <section class="main-container">       
@@ -98,7 +112,7 @@
             </div>
             <div class=""></div>
                 <p class="name animate__animated animate__fadeInDown animate__delay-1s">ANGELOV</p>      
-                <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Art Design Studio</p>
+                <p class="designer animate__animated animate__fadeInRight animate__delay-1s">Art & Design Studio</p>
                 <img class="scrollpls animate__animated animate__fadeOutDown animate__delay-5s" src="img/icon/arrowDown.svg" onclick="scrollToDiv('#scrollanchor')">
             </div>
         </div> 
